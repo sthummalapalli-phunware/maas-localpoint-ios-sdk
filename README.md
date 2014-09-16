@@ -29,6 +29,20 @@ libsqlite3.lib
 
 
 
+Set Up
+------------
+Add the following key/value to you app Info.plist file:
+````
+Required background modes 
+	Value1: App registers for location updates. This will allow your application to get location updates in the background.
+	Value2: App downloads content from the network. Note: The addition of this row is only for 2.4.0+ versions of our SDK.
+LPServer; Value: sandbox for testing and api for production.
+LPAppID; Value: application ID matching the server choice.
+LPBrand; Value: your brand name.
+````
+
+
+
 Documentation
 ------------
 
