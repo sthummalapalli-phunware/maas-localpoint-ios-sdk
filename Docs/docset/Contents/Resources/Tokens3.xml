@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ILPAttributeManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ILPAttributeManager</TokenIdentifier>
+			<Abstract type="html">This interface defines the object managing profile and user attributes. The manager is responsible for updating the attributes and asynchronously notifying the listener of the update result.</Abstract>
+			<DeclaredIn>ILPAttributeManager.h</DeclaredIn>
+            <Availability type="html">(
+    &quot;2.3.0&quot;
+)</Availability>
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPAttributeManager/updateProfileAttributes:</TokenIdentifier>
+			<Abstract type="html">Updates the profile attributes.
+*</Abstract>
+			<DeclaredIn>ILPAttributeManager.h</DeclaredIn>
+			
+			<Declaration>- (void)updateProfileAttributes:(NSDictionary *)attrs</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>attrs</Name>
+					<Abstract type="html">The new profile attributes to be associated with the device. &lt;code&gt;attrs&lt;/code&gt; become the complete set of the profile attributes - any existing attributes not in &lt;code&gt;attrs&lt;/code&gt; are removed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/updateProfileAttributes:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPAttributeManager/updateUserAttributes:</TokenIdentifier>
+			<Abstract type="html">Updates the user attributes.</Abstract>
+			<DeclaredIn>ILPAttributeManager.h</DeclaredIn>
+			
+			<Declaration>- (void)updateUserAttributes:(NSDictionary *)attrs</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>attrs</Name>
+					<Abstract type="html">new user attributes to be associated with the device. &lt;code&gt;attrs&lt;/code&gt; become the complete set of the user attributes - any existing attributes not in &lt;code&gt;attrs&lt;/code&gt; are removed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/updateUserAttributes:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPAttributeManager/addListener:</TokenIdentifier>
+			<Abstract type="html">Adds the attribute listener to the manager.</Abstract>
+			<DeclaredIn>ILPAttributeManager.h</DeclaredIn>
+			
+			<Declaration>- (void)addListener:(id&lt;ILPAttributeListener&gt;)listener</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>listener</Name>
+					<Abstract type="html">The listener to be added (must not be &lt;code&gt;nil&lt;/code&gt;)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addListener:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPAttributeManager/removeListener:</TokenIdentifier>
+			<Abstract type="html">Removes the given listener from the manager.</Abstract>
+			<DeclaredIn>ILPAttributeManager.h</DeclaredIn>
+			
+			<Declaration>- (void)removeListener:(id&lt;ILPAttributeListener&gt;)listener</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>listener</Name>
+					<Abstract type="html">The listener to remove (must not be &lt;code&gt;nil&lt;/code&gt;)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeListener:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPAttributeManager/removeAllListeners</TokenIdentifier>
+			<Abstract type="html">Removes all listeners from the manager.</Abstract>
+			<DeclaredIn>ILPAttributeManager.h</DeclaredIn>
+			
+			<Declaration>- (void)removeAllListeners</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllListeners</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ILPAttributeListener.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ILPAttributeListener</TokenIdentifier>
+			<Abstract type="html">A listener that receives notifications on attribute updates of a device.</Abstract>
+			<DeclaredIn>ILPAttributeListener.h</DeclaredIn>
+            <Availability type="html">(
+    &quot;2.3.0&quot;
+)</Availability>
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPAttributeListener/onUpdateFailure:withError:</TokenIdentifier>
+			<Abstract type="html">Notifies this listener of a failed update.</Abstract>
+			<DeclaredIn>ILPAttributeListener.h</DeclaredIn>
+			
+			<Declaration>- (void)onUpdateFailure:(NSDictionary *)attrs withError:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>attrs</Name>
+					<Abstract type="html">The attributes that were submitted in the failed update (should never be &lt;code&gt;nil&lt;/code&gt;)</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">The error that caused the failure (should never be &lt;code&gt;nil&lt;/code&gt;)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onUpdateFailure:withError:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPAttributeListener/onUpdateSuccess:</TokenIdentifier>
+			<Abstract type="html">Notifies this listener of a successful update.</Abstract>
+			<DeclaredIn>ILPAttributeListener.h</DeclaredIn>
+			
+			<Declaration>- (void)onUpdateSuccess:(NSDictionary *)attrs</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>attrs</Name>
+					<Abstract type="html">The attributes that were submitted successfully in the update (should never be &lt;code&gt;nil&lt;/code&gt;)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onUpdateSuccess:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

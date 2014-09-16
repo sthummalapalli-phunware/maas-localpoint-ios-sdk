@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ILPOrdering.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ILPOrdering</TokenIdentifier>
+			<Abstract type="html">An ordering can determine the relative ordering of any two objects in a domain.</Abstract>
+			<DeclaredIn>ILPOrdering.h</DeclaredIn>
+            <Availability type="html">(
+    &quot;1.0.0&quot;
+)</Availability>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ILPOrdering/FIRST_LESS_THAN_SECOND</TokenIdentifier>
+			<Abstract type="html">The value returned by {@link #compare(Object, Object)} if the first argument precedes the second argument in this ordering.</Abstract>
+			<DeclaredIn>ILPOrdering.h</DeclaredIn>
+			
+			<Declaration>+ (int)FIRST_LESS_THAN_SECOND</Declaration>
+			
+			
+			<Anchor>//api/name/FIRST_LESS_THAN_SECOND</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ILPOrdering/FIRST_EQUAL_TO_SECOND</TokenIdentifier>
+			<Abstract type="html">The value returned by {@link #compare(Object, Object)} if the first argument neither precedes nor succeeds the second argument in this ordering.</Abstract>
+			<DeclaredIn>ILPOrdering.h</DeclaredIn>
+			
+			<Declaration>+ (int)FIRST_EQUAL_TO_SECOND</Declaration>
+			
+			
+			<Anchor>//api/name/FIRST_EQUAL_TO_SECOND</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ILPOrdering/FIRST_GREATER_THAN_SECOND</TokenIdentifier>
+			<Abstract type="html">The value returned by {@link #compare(Object, Object)} if the first argument succeeds the second argument in this ordering.</Abstract>
+			<DeclaredIn>ILPOrdering.h</DeclaredIn>
+			
+			<Declaration>+ (int)FIRST_GREATER_THAN_SECOND</Declaration>
+			
+			
+			<Anchor>//api/name/FIRST_GREATER_THAN_SECOND</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
