@@ -1,7 +1,7 @@
 Localpoint SDK for iOS
 ==================
 
-Version 2.5.4
+Version 2.6.0
 
 Localpoint is a comprehensive location-based and notification customization that allows easy integration with your iOS app. Visit http://www.digby.com/ for more details and to sign up.
 
@@ -11,16 +11,17 @@ Requirements
 ------------
 
 - iOS 6.0 or greater
-- Xcode 4.4 or greater
+- Xcode 5 or greater
 
 
 
 Installation
 ------------
 
-Just add Localpoint.framework to your Xcode project.
+1. Just add Localpoint.framework to your Xcode project.
+2. In your build settings, verify that the `Framework Search Paths` has an entry for pointing to the Localpoing.framework folder. For example: `$(PROJECT_DIR)/Vendor/Phunware/Localpoint`.
 
-The following frameworks are required:
+3. The following iOS frameworks are required:
 ````
 CoreLocation.framework
 CoreGraphics.framework
