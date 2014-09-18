@@ -1,0 +1,20 @@
+/* Localized versions of Info.plist keys */
+
+//Dev
+"playground"    = "a4a94fe7-c25f-442c-a761-64d06595d498";
+
+//Stage
+"qabrand"       = "7934c40d-2350-400e-953a-538e214558cb";
+
+//Demo
+"ericsbrand"    = "e9cfcfb3-2e09-4230-a67a-6d821134e08c";
+"qabrand"       = "6cf604c4-51da-43c3-a7a5-06877f7d91be";
+
+//Sandbox
+"sikora"        = "31753b0e-c989-4955-a8b7-0cc4bec0122c";
+"jason"         = "cdd09ad5-a396-4ac3-8f6c-800510e55924";
+"qabrand"       = "2c452883-0bb0-40f4-8b5c-cc5f3fadd21b";
+
+//Prod
+"engineering"   = "0a460ce7-5cab-4320-bdfa-cb4989f07026";
+"qa"            = "9db79637-85ff-4a53-aa64-d8f8a45f38b3";
