@@ -37,7 +37,7 @@
 @interface Localpoint : NSObject
 
 /**
- Returns the name of the SDK, `PWLocation`.
+ Returns the name of the SDK, `PWLocalpoint`.
  */
 + (NSString *)serviceName;
 
