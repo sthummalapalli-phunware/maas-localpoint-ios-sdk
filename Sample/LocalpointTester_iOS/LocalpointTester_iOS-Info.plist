@@ -30,8 +30,6 @@
 	<string>2c452883-0bb0-40f4-8b5c-cc5f3fadd21b</string>
 	<key>LPBrand</key>
 	<string>qabrand</string>
-	<key>LPSearchRadius</key>
-	<integer>50000</integer>
 	<key>LPServer</key>
 	<string>sandbox</string>
 	<key>LSRequiresIPhoneOS</key>
