@@ -61,18 +61,26 @@
     [lpService start];
     
     // Register device with APNS for push notifications
-    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:
-     (UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
+    if ([[UIApplication sharedApplication] respondsToSelector:@selector(registerForRemoteNotifications)]) {
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:(UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert) categories:nil];
+        [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+        [[UIApplication sharedApplication] registerForRemoteNotifications];
+    } else {
+        [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
+    }
     
     // Always inform Localpoint that the app launched. Let the SDK figure out if anything needs to be done.
     [lpService appDidFinishLaunchingWithOptions:launchOptions];
     
     // Did we launch based on tapping remote or local notification?
-    if (launchOptions && [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey])
-    {
-        UILocalNotification *notif = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
-        [LPLoggingManager logExternal:@"App opened by tapping on local notification: %@", [notif.userInfo description]];
-        [self showIndicatorAndRedirect: [notif.userInfo objectForKey:@"messageId"]];
+    if (launchOptions) {
+        if ([launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey]) {
+            NSString *msgId = [[launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey] objectForKey:@"messageId"];
+            [self showIndicatorAndRedirect:msgId];
+        } else if ([launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey]) {
+            UILocalNotification *notif = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
+            [self showIndicatorAndRedirect:[notif.userInfo objectForKey:@"messageId"]];
+        }
     }
     
     [BadgeManager refreshBadgeCount];
@@ -222,8 +230,14 @@
     [self.window.rootViewController.view addSubview:activityIndicator];
     [activityIndicator startAnimating];
     
-    // Delay added to support remote notifications and the delay it takes before the push callback loads the offer into the wallet.
-    [self performSelector:@selector(redirectToPromotion:) withObject:messageId afterDelay:3.0f];
+    // Delay added to support remote notifications and the delay it takes before the push callback loads the offer into the wallet
+    if ([[lpService getMessageProvider] getMessage:[[LPMessageID alloc] initWithString:messageId]]) {
+        // Opening message detail view directly
+        [self redirectToPromotion:messageId];
+    } else {
+        // Opening message detail view until message body is completed loading from Localpoint server
+        [self performSelector:@selector(openMessageDetail:) withObject:messageId afterDelay:3.0f];
+    }
 }
 
 /**

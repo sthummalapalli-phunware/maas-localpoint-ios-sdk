@@ -25,11 +25,11 @@
 	<key>CFBundleVersion</key>
 	<string>2.5.2.0-5796</string>
 	<key>LPAppID</key>
-	<string>2c452883-0bb0-40f4-8b5c-cc5f3fadd21b</string>
+	<string>0a460ce7-5cab-4320-bdfa-cb4989f07026</string>
 	<key>LPBrand</key>
-	<string>qabrand</string>
+	<string>engineering</string>
 	<key>LPServer</key>
-	<string>sandbox</string>
+	<string>api</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSLocationAlwaysUsageDescription</key>
