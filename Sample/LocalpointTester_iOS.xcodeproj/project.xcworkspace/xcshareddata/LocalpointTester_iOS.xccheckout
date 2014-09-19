@@ -12,21 +12,13 @@
 	<dict>
 		<key>BC40554971C1DC9402726E7DDFDE6FCA6C737FCD</key>
 		<string>https://github.com/phunware/maas-localpoint-ios-sdk.git</string>
-		<key>EC0A34D3377E90F5B2B5593EA6E707FDBA4593D4</key>
-		<string>https://github.com/xiangwei-wang/LocalpointTester_iOS.git</string>
-		<key>FA1F1B22EFC8643DAFCB481FD44D494CAD52CC53</key>
-		<string>https://github.com/xiangwei-wang/Localpoint_iOS_Library.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>LocalpointTester_iOS.xcodeproj</string>
+	<string>Sample/LocalpointTester_iOS.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>BC40554971C1DC9402726E7DDFDE6FCA6C737FCD</key>
-		<string>../..</string>
-		<key>EC0A34D3377E90F5B2B5593EA6E707FDBA4593D4</key>
-		<string>../../../LocalpointTester_iOS</string>
-		<key>FA1F1B22EFC8643DAFCB481FD44D494CAD52CC53</key>
-		<string>../../../Localpoint_iOS_Library</string>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/phunware/maas-localpoint-ios-sdk.git</string>
@@ -36,22 +28,6 @@
 	<string>BC40554971C1DC9402726E7DDFDE6FCA6C737FCD</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>FA1F1B22EFC8643DAFCB481FD44D494CAD52CC53</string>
-			<key>IDESourceControlWCCName</key>
-			<string>Localpoint_iOS_Library</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>EC0A34D3377E90F5B2B5593EA6E707FDBA4593D4</string>
-			<key>IDESourceControlWCCName</key>
-			<string>LocalpointTester_iOS</string>
-		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
