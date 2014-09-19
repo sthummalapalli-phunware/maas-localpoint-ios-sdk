@@ -25,6 +25,7 @@ Installation
 ````
 CoreLocation.framework
 CoreGraphics.framework
+CoreMotion.framework
 libsqlite3.lib
 ````
 
@@ -40,6 +41,7 @@ Required background modes
 LPServer; Value: sandbox for testing and api for production.
 LPAppID; Value: application ID matching the server choice.
 LPBrand; Value: your brand name.
+NSLocationAlwaysUsageDescription; Value: whatever you want to display on the prompted alert when granting to use GPS location service.
 ````
 
 
@@ -89,6 +91,17 @@ Localpoint provide a ILPMessageListener interface, you just need to implement th
 	
 	// Register your message listener
 	[[lpService getMessageProvider] addListener:messageListener];
+````
+
+### Custom local notification callback
+
+Localpoint provide a ILPLocalNotificationListener interface, you just need to implement the methods and set it to LPLocalpointService.
+
+````objective-c
+	LPLocalNotificationListener *localNotificationListener = [[LPLocalNotificationListener alloc] init];
+	
+	// Register your local notification listener
+	[lpService setLocalNotificationListener:localNotificationListener];
 ````
 
 ### Stop Localpoint service
