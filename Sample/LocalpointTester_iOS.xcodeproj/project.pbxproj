@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C65018719D1FA4F00710099 /* Home.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 3C65018619D1FA4F00710099 /* Home.gpx */; };
 		3FDF5BC917F23A7B0038393D /* AttributeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDF5BC817F23A7B0038393D /* AttributeViewController.m */; };
 		3FDF5BCC17F23A8C0038393D /* IdentifierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDF5BCB17F23A8C0038393D /* IdentifierViewController.m */; };
 		3FDF5BD617F23AB20038393D /* LPAttributeListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDF5BCF17F23AB20038393D /* LPAttributeListener.m */; };
@@ -72,6 +73,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C65018619D1FA4F00710099 /* Home.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Home.gpx; sourceTree = SOURCE_ROOT; };
 		3FDF5BC717F23A7B0038393D /* AttributeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributeViewController.h; sourceTree = "<group>"; };
 		3FDF5BC817F23A7B0038393D /* AttributeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributeViewController.m; sourceTree = "<group>"; };
 		3FDF5BCA17F23A8C0038393D /* IdentifierViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdentifierViewController.h; sourceTree = "<group>"; };
@@ -339,6 +341,7 @@
 				96CB674616D3D10D00A610B9 /* Default@2x.png */,
 				96CB674816D3D10D00A610B9 /* Default-568h@2x.png */,
 				9D1EEC4919A2B5CA00A42B92 /* Phunware.gpx */,
+				3C65018619D1FA4F00710099 /* Home.gpx */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -477,6 +480,7 @@
 				9D1EEC4A19A2B5CA00A42B92 /* Phunware.gpx in Resources */,
 				96C799A616D67F5B0069020E /* menu_checkin_off.png in Resources */,
 				96C799A716D67F5B0069020E /* menu_list_off.png in Resources */,
+				3C65018719D1FA4F00710099 /* Home.gpx in Resources */,
 				96C799A816D67F5B0069020E /* menu_location_off.png in Resources */,
 				96C799A916D67F5B0069020E /* menu_log_off.png in Resources */,
 				96C799AA16D67F5B0069020E /* menu_offers_off.png in Resources */,
@@ -617,8 +621,8 @@
 		96CB675316D3D10D00A610B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Xiangwei Wang (N9FLFCX8DY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Xiangwei Wang (N9FLFCX8DY)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LocalpointTester_iOS/Localpoint/Localpoint",
@@ -631,8 +635,8 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "fbb91674-c572-43af-a87a-75670ce2e39c";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "fbb91674-c572-43af-a87a-75670ce2e39c";
 				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
