@@ -236,7 +236,7 @@
         [self redirectToPromotion:messageId];
     } else {
         // Opening message detail view until message body is completed loading from Localpoint server
-        [self performSelector:@selector(openMessageDetail:) withObject:messageId afterDelay:3.0f];
+        [self performSelector:@selector(redirectToPromotion:) withObject:messageId afterDelay:3.0f];
     }
 }
 
