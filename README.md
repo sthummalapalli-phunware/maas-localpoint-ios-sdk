@@ -49,7 +49,7 @@ NSLocationAlwaysUsageDescription; Value: whatever you want to display on the pro
 Documentation
 ------------
 
-Localpoint documentation is included in the the repository's Documents folder as both HTML and as a .docset.
+Localpoint documentation is included in the the repository's Documents folder as both HTML and as a .docset. You can also find the latest documentation here: http://phunware.github.io/maas-localpoint-ios-sdk/
 
 
 
