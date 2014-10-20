@@ -61,11 +61,11 @@
 		96EFF2C916D6A78800BA7F1F /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EFF2C816D6A78800BA7F1F /* DetailsViewController.m */; };
 		9D1EEC4A19A2B5CA00A42B92 /* Phunware.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 9D1EEC4919A2B5CA00A42B92 /* Phunware.gpx */; };
 		9D1FB06819C8F87A00DB3EB7 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1FB06719C8F87A00DB3EB7 /* CoreMotion.framework */; };
-		9D3C906D19CA44AE005A9621 /* Localpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3C906C19CA44AE005A9621 /* Localpoint.framework */; };
 		9D5FCB8419CA3CC900DE9A65 /* iToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5FCB7D19CA3CC900DE9A65 /* iToast.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9D5FCB8519CA3CC900DE9A65 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5FCB7F19CA3CC900DE9A65 /* Toast+UIView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9D5FCB8619CA3CC900DE9A65 /* UIAlertView+LPTAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5FCB8119CA3CC900DE9A65 /* UIAlertView+LPTAlertView.m */; };
 		9D5FCB8719CA3CC900DE9A65 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5FCB8319CA3CC900DE9A65 /* ViewController.m */; };
+		9DE4A57F19F57B9800B1C5B5 /* Localpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DE4A57C19F5762500B1C5B5 /* Localpoint.framework */; };
 		9DE9F2B219A6A12600924904 /* LPLocalNotificationListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE9F2B119A6A12600924904 /* LPLocalNotificationListener.m */; };
 		C3623BDE1835368600EDA2E6 /* LPMessageID.m in Sources */ = {isa = PBXBuildFile; fileRef = C3623BDD1835368600EDA2E6 /* LPMessageID.m */; };
 		D7E1AC8618E3717E0025294A /* BadgeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E1AC8518E3717E0025294A /* BadgeManager.m */; };
@@ -158,7 +158,6 @@
 		96EFF2C816D6A78800BA7F1F /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		9D1EEC4919A2B5CA00A42B92 /* Phunware.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Phunware.gpx; path = ../Phunware.gpx; sourceTree = "<group>"; };
 		9D1FB06719C8F87A00DB3EB7 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		9D3C906C19CA44AE005A9621 /* Localpoint.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Localpoint.framework; sourceTree = "<group>"; };
 		9D54AA9419CB474200408143 /* LPConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LPConfiguration.h; path = Localpoint/LPConfiguration.h; sourceTree = "<group>"; };
 		9D54AA9519CB474200408143 /* LPLoggingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LPLoggingManager.h; path = Localpoint/LPLoggingManager.h; sourceTree = "<group>"; };
 		9D5FCB7C19CA3CC900DE9A65 /* iToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iToast.h; path = Localpoint/iToast.h; sourceTree = "<group>"; };
@@ -169,6 +168,7 @@
 		9D5FCB8119CA3CC900DE9A65 /* UIAlertView+LPTAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+LPTAlertView.m"; path = "Localpoint/UIAlertView+LPTAlertView.m"; sourceTree = "<group>"; };
 		9D5FCB8219CA3CC900DE9A65 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9D5FCB8319CA3CC900DE9A65 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9DE4A57C19F5762500B1C5B5 /* Localpoint.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Localpoint.framework; path = ../Framework/latest/Localpoint.framework; sourceTree = "<group>"; };
 		9DE9F2B019A6A12600924904 /* LPLocalNotificationListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPLocalNotificationListener.h; sourceTree = "<group>"; };
 		9DE9F2B119A6A12600924904 /* LPLocalNotificationListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPLocalNotificationListener.m; sourceTree = "<group>"; };
 		C3623BDC1835368600EDA2E6 /* LPMessageID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LPMessageID.h; path = Localpoint/LPMessageID.h; sourceTree = "<group>"; };
@@ -184,7 +184,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D3C906D19CA44AE005A9621 /* Localpoint.framework in Frameworks */,
+				9DE4A57F19F57B9800B1C5B5 /* Localpoint.framework in Frameworks */,
 				9D1FB06819C8F87A00DB3EB7 /* CoreMotion.framework in Frameworks */,
 				9669C35918BD1E3A00428250 /* OpenGLES.framework in Frameworks */,
 				9669C35718BD1E3300428250 /* AudioToolbox.framework in Frameworks */,
@@ -222,7 +222,6 @@
 		967ED4F316D3F9A800631571 /* Localpoint */ = {
 			isa = PBXGroup;
 			children = (
-				9D3C906B19CA44AE005A9621 /* Localpoint */,
 				9D5FCB8C19CA3F8400DE9A65 /* Listeners */,
 				9D5FCB8B19CA3F2500DE9A65 /* Controllers */,
 				96839C3916F2139800F92D65 /* Utils */,
@@ -298,6 +297,7 @@
 		96CB673116D3D10D00A610B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9DE4A57C19F5762500B1C5B5 /* Localpoint.framework */,
 				967ED4D016D3F8CD00631571 /* libsqlite3.0.dylib */,
 				9615A31918072EB40086F291 /* libz.dylib */,
 				967ED4CE16D3F8C600631571 /* CoreLocation.framework */,
@@ -344,14 +344,6 @@
 				3C65018619D1FA4F00710099 /* Home.gpx */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		9D3C906B19CA44AE005A9621 /* Localpoint */ = {
-			isa = PBXGroup;
-			children = (
-				9D3C906C19CA44AE005A9621 /* Localpoint.framework */,
-			);
-			path = Localpoint;
 			sourceTree = "<group>";
 		};
 		9D5FCB8B19CA3F2500DE9A65 /* Controllers */ = {
@@ -564,8 +556,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Xiangwei Wang (N9FLFCX8DY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Xiangwei Wang (N9FLFCX8DY)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/LocalpointTester_iOS/UbertestersSDK";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -582,8 +574,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = "${SRCROOT}/LocalpointTester_iOS/LocalpointSDK";
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "4DD41FD5-FE49-4F1A-A40B-0829801F9CB5";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4DD41FD5-FE49-4F1A-A40B-0829801F9CB5";
+				PROVISIONING_PROFILE = "7547f42a-da1b-4103-b027-5aeb506a6939";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "7547f42a-da1b-4103-b027-5aeb506a6939";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -626,6 +618,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LocalpointTester_iOS/Localpoint/Localpoint",
+					"/Users/xiangwei/Downloads/abab/maas-localpoint-ios-sdk/Framework/latest",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocalpointTester_iOS/LocalpointTester_iOS-Prefix.pch";
@@ -635,8 +628,8 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "fbb91674-c572-43af-a87a-75670ce2e39c";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "fbb91674-c572-43af-a87a-75670ce2e39c";
+				PROVISIONING_PROFILE = "7547f42a-da1b-4103-b027-5aeb506a6939";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "7547f42a-da1b-4103-b027-5aeb506a6939";
 				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
@@ -650,6 +643,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LocalpointTester_iOS/Localpoint/Localpoint",
+					"/Users/xiangwei/Downloads/abab/maas-localpoint-ios-sdk/Framework/latest",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocalpointTester_iOS/LocalpointTester_iOS-Prefix.pch";
@@ -704,6 +698,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LocalpointTester_iOS/Localpoint/Localpoint",
+					"/Users/xiangwei/Downloads/abab/maas-localpoint-ios-sdk/Framework/latest",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocalpointTester_iOS/LocalpointTester_iOS-Prefix.pch";
