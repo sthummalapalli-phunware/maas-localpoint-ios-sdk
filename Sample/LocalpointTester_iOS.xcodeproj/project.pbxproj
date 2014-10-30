@@ -65,7 +65,8 @@
 		9D5FCB8519CA3CC900DE9A65 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5FCB7F19CA3CC900DE9A65 /* Toast+UIView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9D5FCB8619CA3CC900DE9A65 /* UIAlertView+LPTAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5FCB8119CA3CC900DE9A65 /* UIAlertView+LPTAlertView.m */; };
 		9D5FCB8719CA3CC900DE9A65 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5FCB8319CA3CC900DE9A65 /* ViewController.m */; };
-		9DE4A57F19F57B9800B1C5B5 /* Localpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DE4A57C19F5762500B1C5B5 /* Localpoint.framework */; };
+		9D9008351A02D63F00187F64 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D9008341A02D63F00187F64 /* Crashlytics.framework */; };
+		9D9008371A02D8BA00187F64 /* Localpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D9008361A02D8BA00187F64 /* Localpoint.framework */; };
 		9DE9F2B219A6A12600924904 /* LPLocalNotificationListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE9F2B119A6A12600924904 /* LPLocalNotificationListener.m */; };
 		C3623BDE1835368600EDA2E6 /* LPMessageID.m in Sources */ = {isa = PBXBuildFile; fileRef = C3623BDD1835368600EDA2E6 /* LPMessageID.m */; };
 		D7E1AC8618E3717E0025294A /* BadgeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E1AC8518E3717E0025294A /* BadgeManager.m */; };
@@ -168,7 +169,8 @@
 		9D5FCB8119CA3CC900DE9A65 /* UIAlertView+LPTAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+LPTAlertView.m"; path = "Localpoint/UIAlertView+LPTAlertView.m"; sourceTree = "<group>"; };
 		9D5FCB8219CA3CC900DE9A65 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9D5FCB8319CA3CC900DE9A65 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		9DE4A57C19F5762500B1C5B5 /* Localpoint.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Localpoint.framework; path = ../Framework/latest/Localpoint.framework; sourceTree = "<group>"; };
+		9D9008341A02D63F00187F64 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		9D9008361A02D8BA00187F64 /* Localpoint.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Localpoint.framework; path = ../Framework/latest/Localpoint.framework; sourceTree = "<group>"; };
 		9DE9F2B019A6A12600924904 /* LPLocalNotificationListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPLocalNotificationListener.h; sourceTree = "<group>"; };
 		9DE9F2B119A6A12600924904 /* LPLocalNotificationListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPLocalNotificationListener.m; sourceTree = "<group>"; };
 		C3623BDC1835368600EDA2E6 /* LPMessageID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LPMessageID.h; path = Localpoint/LPMessageID.h; sourceTree = "<group>"; };
@@ -184,7 +186,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DE4A57F19F57B9800B1C5B5 /* Localpoint.framework in Frameworks */,
+				9D9008371A02D8BA00187F64 /* Localpoint.framework in Frameworks */,
 				9D1FB06819C8F87A00DB3EB7 /* CoreMotion.framework in Frameworks */,
 				9669C35918BD1E3A00428250 /* OpenGLES.framework in Frameworks */,
 				9669C35718BD1E3300428250 /* AudioToolbox.framework in Frameworks */,
@@ -192,6 +194,7 @@
 				9669C35318BD1E2500428250 /* SystemConfiguration.framework in Frameworks */,
 				9669C35118BD1E1A00428250 /* CoreImage.framework in Frameworks */,
 				9669C34F18BD1E1500428250 /* QuartzCore.framework in Frameworks */,
+				9D9008351A02D63F00187F64 /* Crashlytics.framework in Frameworks */,
 				9669C34D18BD1DFD00428250 /* AdSupport.framework in Frameworks */,
 				96E8B99718AC70FA00C417D5 /* MessageUI.framework in Frameworks */,
 				9615A31A18072EB40086F291 /* libz.dylib in Frameworks */,
@@ -297,9 +300,10 @@
 		96CB673116D3D10D00A610B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9DE4A57C19F5762500B1C5B5 /* Localpoint.framework */,
+				9D9008361A02D8BA00187F64 /* Localpoint.framework */,
 				967ED4D016D3F8CD00631571 /* libsqlite3.0.dylib */,
 				9615A31918072EB40086F291 /* libz.dylib */,
+				9D9008341A02D63F00187F64 /* Crashlytics.framework */,
 				967ED4CE16D3F8C600631571 /* CoreLocation.framework */,
 				9D1FB06719C8F87A00DB3EB7 /* CoreMotion.framework */,
 				9669C35818BD1E3A00428250 /* OpenGLES.framework */,
@@ -416,6 +420,7 @@
 				96CB672B16D3D10D00A610B9 /* Sources */,
 				96CB672C16D3D10D00A610B9 /* Frameworks */,
 				96CB672D16D3D10D00A610B9 /* Resources */,
+				9D90082F1A02D60300187F64 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -480,6 +485,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9D90082F1A02D60300187F64 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run b8127086af392cb1b73dc00a7387bb7a0856138f 47c407d9fb90f3350023f2dac10c37722a9caf3ae98396a16b0b41715177000a";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		96CB672B16D3D10D00A610B9 /* Sources */ = {
@@ -556,10 +577,10 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Xiangwei Wang (N9FLFCX8DY)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Xiangwei Wang (N9FLFCX8DY)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/LocalpointTester_iOS/UbertestersSDK";
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -572,10 +593,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				LIBRARY_SEARCH_PATHS = "${SRCROOT}/LocalpointTester_iOS/LocalpointSDK";
+				LIBRARY_SEARCH_PATHS = "";
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "7547f42a-da1b-4103-b027-5aeb506a6939";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "7547f42a-da1b-4103-b027-5aeb506a6939";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -592,19 +613,19 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: 30 Second Software, Inc.";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: 30 Second Software, Inc.";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
-				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/LocalpointTester_iOS/UbertestersSDK";
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				LIBRARY_SEARCH_PATHS = "${SRCROOT}/LocalpointTester_iOS/LocalpointSDK";
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "FB9F2AA0-0F59-4676-B04C-D30F45BFE0F0";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "FB9F2AA0-0F59-4676-B04C-D30F45BFE0F0";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -613,12 +634,12 @@
 		96CB675316D3D10D00A610B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Xiangwei Wang (N9FLFCX8DY)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Xiangwei Wang (N9FLFCX8DY)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/LocalpointTester_iOS/Localpoint/Localpoint",
-					"/Users/xiangwei/Downloads/abab/maas-localpoint-ios-sdk/Framework/latest",
+					"$(PROJECT_DIR)/../Framework/latest",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocalpointTester_iOS/LocalpointTester_iOS-Prefix.pch";
@@ -628,8 +649,8 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7547f42a-da1b-4103-b027-5aeb506a6939";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "7547f42a-da1b-4103-b027-5aeb506a6939";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
@@ -638,12 +659,12 @@
 		96CB675416D3D10D00A610B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Phunware, Inc./";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Phunware, Inc./";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/LocalpointTester_iOS/Localpoint/Localpoint",
-					"/Users/xiangwei/Downloads/abab/maas-localpoint-ios-sdk/Framework/latest",
+					"$(PROJECT_DIR)/../Framework/latest",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocalpointTester_iOS/LocalpointTester_iOS-Prefix.pch";
@@ -653,8 +674,8 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "53c1bb60-19da-49d1-ab27-b21cd2cb1769";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "53c1bb60-19da-49d1-ab27-b21cd2cb1769";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
@@ -672,19 +693,19 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: 30 Second Software, Inc.";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: 30 Second Software, Inc.";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
-				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/LocalpointTester_iOS/UbertestersSDK";
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				LIBRARY_SEARCH_PATHS = "${SRCROOT}/LocalpointTester_iOS/LocalpointSDK";
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "FB9F2AA0-0F59-4676-B04C-D30F45BFE0F0";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "FB9F2AA0-0F59-4676-B04C-D30F45BFE0F0";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -693,12 +714,12 @@
 		A6B6920A19929805003D4364 /* Enterprise */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Phunware, Inc./";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Phunware, Inc./";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/LocalpointTester_iOS/Localpoint/Localpoint",
-					"/Users/xiangwei/Downloads/abab/maas-localpoint-ios-sdk/Framework/latest",
+					"$(PROJECT_DIR)/../Framework/latest",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocalpointTester_iOS/LocalpointTester_iOS-Prefix.pch";
@@ -708,8 +729,8 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "53c1bb60-19da-49d1-ab27-b21cd2cb1769";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "53c1bb60-19da-49d1-ab27-b21cd2cb1769";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};

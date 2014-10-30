@@ -5,7 +5,7 @@
 //  Created by Jason Schmitt on 2/19/13.
 //  Copyright (c) 2013 Jason Schmitt. All rights reserved.
 //
-
+#import <Crashlytics/Crashlytics.h>
 #import <Localpoint/Localpoint.h>
 #import "AppDelegate.h"
 #import "LPLocationListener.h"
@@ -45,6 +45,8 @@
     NSLog(@"App did finish launching with options.");
     [LPLoggingManager logExternal:@"App did finish launching with options."];
     // Override point for customization after application launch.
+    
+    [Crashlytics startWithAPIKey:@"b8127086af392cb1b73dc00a7387bb7a0856138f"];
     
     // INTERNAL USE ONLY
     internalLogger = [[LPInternalLoggingDelegate alloc] init];
@@ -179,14 +181,6 @@
     
     //Pass the notification to Localpoint SDK.
     [lpService didReceiveRemoteNotification:userInfo];
-    
-    NSString *messageId = [userInfo objectForKey:@"messageId"];
-    if(messageId != nil){
-        NSLog(@"Go to promotion view with messageId = %@", messageId);
-        [LPLoggingManager logInternal:@"Go to promotion view with messageId = %@", messageId];
-        [self showIndicatorAndRedirect: messageId];
-    }
-    
 }
 
 - (void)application:(UIApplication *)app didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
