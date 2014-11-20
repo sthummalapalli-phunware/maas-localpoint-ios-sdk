@@ -62,6 +62,8 @@
     //Start the service
     [lpService start];
     
+    NSLog(@"Current Localpoint SDK version is %@.", [[lpService getSDKVersion] getValue]);
+    
     // Register device with APNS for push notifications
     if ([[UIApplication sharedApplication] respondsToSelector:@selector(registerForRemoteNotifications)]) {
         UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert) categories:nil];
