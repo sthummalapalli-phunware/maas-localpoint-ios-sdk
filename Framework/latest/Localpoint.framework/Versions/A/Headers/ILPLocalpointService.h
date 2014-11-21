@@ -73,6 +73,13 @@
 - (BOOL)isBrandEnabled;
 
 /**
+ Enable motion activity for Localpoint SDK
+ 
+ @discussion Motion activity feature only works on iPhone 5s and later or iPad 2 and later, it's disabled by default.
+ */
+- (void)enableMotionActivity;
+
+/**
  Starts this service.
  
  @discussion Turns on the SDK and puts it into a ready state to begin device registration and start location services. This call has no effect if this service has previously been started.
@@ -93,6 +100,7 @@
  @param listener the {@link ILPLocalNotificationListener local notification listener}
  */
 - (void)setLocalNotificationListener:(id<ILPLocalNotificationListener>)listener;
+
 @end
 
 #define ComDigbyLocalpointSdkCoreILPLocalpointService ILPLocalpointService

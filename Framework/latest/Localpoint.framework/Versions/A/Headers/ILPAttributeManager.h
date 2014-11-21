@@ -5,6 +5,8 @@
 //  Copyright (c) 2013 Phunware. All rights reserved.
 //
 
+typedef void (^LPServerProcessCompletion)(NSDictionary *attributes, NSError *error);
+
 @protocol ILPAttributeListener;
 
 /**
@@ -50,5 +52,19 @@
  Removes all listeners from the manager.
  */
 - (void)removeAllListeners;
+
+/**
+ Get user attribute
+ 
+ @param The block returns user attribute or error
+ */
+- (void)getUserAttributes:(LPServerProcessCompletion)completion;
+
+/**
+ Get profile attribute
+ 
+ @param The block returns profile attribute or error
+ */
+- (void)getProfileAttributes:(LPServerProcessCompletion)completion;
 
 @end
