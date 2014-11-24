@@ -1,7 +1,7 @@
 Localpoint SDK for iOS
 ==================
 
-Version 2.6.0
+Version 2.6.2
 
 Localpoint is a comprehensive location-based and notification customization that allows easy integration with your iOS app. Visit http://www.digby.com/ for more details and to sign up.
 
