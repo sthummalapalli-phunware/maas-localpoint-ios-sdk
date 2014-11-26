@@ -1,52 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/ILPMessageFilterFactory.html">
+	<File path="Protocols/ILPMessage.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/ILPMessageFilterFactory</TokenIdentifier>
-			<Abstract type="html">A message filter factory provides {@link ILPFilter filters} that operate on {@link ILPMessage messages}.</Abstract>
-			<DeclaredIn>ILPMessageFilterFactory.h</DeclaredIn>
-            <Availability type="html">(
-    &quot;1.0.0&quot;
-)</Availability>
+			<TokenIdentifier>//apple_ref/occ/intf/ILPMessage</TokenIdentifier>
+			<Abstract type="html">A message is a communication (generally marketing-related) sent from the server.</Abstract>
+			<DeclaredIn>ILPMessage.h</DeclaredIn>
+            <Availability type="html"></Availability>
 			
 			<NodeRef refid="18"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/ILPMessageFilterFactory/getAllFilter</TokenIdentifier>
-			<Abstract type="html">Returns a filter that accepts all messages.</Abstract>
-			<DeclaredIn>ILPMessageFilterFactory.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPMessage/getBody</TokenIdentifier>
+			<Abstract type="html">Returns the body of this message.</Abstract>
+			<DeclaredIn>ILPMessage.h</DeclaredIn>
 			
-			<Declaration>- (id&lt;ILPFilter&gt;)getAllFilter</Declaration>
+			<Declaration>- (NSString *)getBody</Declaration>
 			
-			<ReturnValue><Abstract type="html">a filter that accepts all messages</Abstract></ReturnValue>
-			<Anchor>//api/name/getAllFilter</Anchor>
+			<ReturnValue><Abstract type="html">the body of this message</Abstract></ReturnValue>
+			<Anchor>//api/name/getBody</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/ILPMessageFilterFactory/getExpiredFilter</TokenIdentifier>
-			<Abstract type="html">Returns a filter that accepts expired messages.</Abstract>
-			<DeclaredIn>ILPMessageFilterFactory.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPMessage/getExpirationDate</TokenIdentifier>
+			<Abstract type="html">Returns the expiration date of this message.</Abstract>
+			<DeclaredIn>ILPMessage.h</DeclaredIn>
 			
-			<Declaration>- (id&lt;ILPFilter&gt;)getExpiredFilter</Declaration>
+			<Declaration>- (NSDate *)getExpirationDate</Declaration>
 			
-			<ReturnValue><Abstract type="html">a filter that accepts expired messages</Abstract></ReturnValue>
-			<Anchor>//api/name/getExpiredFilter</Anchor>
+			<ReturnValue><Abstract type="html">the expiration date of this message</Abstract></ReturnValue>
+			<Anchor>//api/name/getExpirationDate</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/ILPMessageFilterFactory/getValidFilter</TokenIdentifier>
-			<Abstract type="html">Returns a filter that accepts valid messages.</Abstract>
-			<DeclaredIn>ILPMessageFilterFactory.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPMessage/getID</TokenIdentifier>
+			<Abstract type="html">Returns the internal unique identifier of the campaign with which this message is associated.</Abstract>
+			<DeclaredIn>ILPMessage.h</DeclaredIn>
 			
-			<Declaration>- (id&lt;ILPFilter&gt;)getValidFilter</Declaration>
+			<Declaration>- (id&lt;ILPID&gt;)getID</Declaration>
 			
-			<ReturnValue><Abstract type="html">a filter that accepts valid messages</Abstract></ReturnValue>
-			<Anchor>//api/name/getValidFilter</Anchor>
+			<ReturnValue><Abstract type="html">the internal unique identifier of the campaign with which this message is associated</Abstract></ReturnValue>
+			<Anchor>//api/name/getID</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPMessage/getTitle</TokenIdentifier>
+			<Abstract type="html">Returns the title of this message.</Abstract>
+			<DeclaredIn>ILPMessage.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)getTitle</Declaration>
+			
+			<ReturnValue><Abstract type="html">the title of this message</Abstract></ReturnValue>
+			<Anchor>//api/name/getTitle</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPMessage/isRead</TokenIdentifier>
+			<Abstract type="html">Indicates whether this message has been read.</Abstract>
+			<DeclaredIn>ILPMessage.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isRead</Declaration>
+			
+			<ReturnValue><Abstract type="html">&lt;code&gt;YES&lt;/code&gt; if this message has been read; &lt;code&gt;NO&lt;/code&gt; otherwise</Abstract></ReturnValue>
+			<Anchor>//api/name/isRead</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPMessage/getMetadata</TokenIdentifier>
+			<Abstract type="html">Returns the metadata of this message.</Abstract>
+			<DeclaredIn>ILPMessage.h</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)getMetadata</Declaration>
+			
+			<ReturnValue><Abstract type="html">the metadata of this message</Abstract></ReturnValue>
+			<Anchor>//api/name/getMetadata</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPMessage/getMetadataValue:</TokenIdentifier>
+			<Abstract type="html">Returns the message metadata value for a key.</Abstract>
+			<DeclaredIn>ILPMessage.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)getMetadataValue:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key of the metadata entry</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the value of the metadata entry</Abstract></ReturnValue>
+			<Anchor>//api/name/getMetadataValue:</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		

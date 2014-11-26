@@ -43,6 +43,8 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
+	<option value="//api/name/enableMotionActivity">&nbsp;&nbsp;&nbsp;&nbsp;- enableMotionActivity</option>
+	
 	<option value="//api/name/getDevice">&nbsp;&nbsp;&nbsp;&nbsp;- getDevice</option>
 	
 	<option value="//api/name/getLocationProvider">&nbsp;&nbsp;&nbsp;&nbsp;- getLocationProvider</option>
@@ -89,6 +91,8 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enableMotionActivity">enableMotionActivity</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getDevice">getDevice</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getLocationProvider">getLocationProvider</a></span></li>
@@ -106,8 +110,6 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/start">start</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stop">stop</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enableMotionActivity">enableMotionActivity</a></span></li>
 	
 </ul></li>
 
@@ -146,7 +148,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>A Localpoint service is the entry point for applications to Localpoint functionality.</p>
+						<p>The location marketing service is the applications entry point to location marketing functionality.</p>
 
 <p>@version 2.6.0</p>
 					</div>
@@ -202,6 +204,12 @@
 	<span class="task-item-suffix">required method</span>
 </li><li>
 	<span class="tooltip">
+		<code><a href="#//api/name/enableMotionActivity">&ndash;&nbsp;enableMotionActivity</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/start">&ndash;&nbsp;start</a></code>
 	</span>
 	
@@ -209,12 +217,6 @@
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/stop">&ndash;&nbsp;stop</a></code>
-	</span>
-	
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/enableMotionActivity">&ndash;&nbsp;enableMotionActivity</a></code>
 	</span>
 	
 	<span class="task-item-suffix">required method</span>
@@ -242,18 +244,59 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
+	<a name="//api/name/enableMotionActivity" title="enableMotionActivity"></a>
+	<h3 class="subsubtitle method-title">enableMotionActivity</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Enable motion activity for location marketing SDK</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)enableMotionActivity</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Motion activity feature only works on iPhone 5s and later or iPad 2 and later, it&rsquo;s disabled by default.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ILPLocalpointService.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/getDevice" title="getDevice"></a>
 	<h3 class="subsubtitle method-title">getDevice</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns the {@link <a href="../Protocols/ILPDevice.html">ILPDevice</a> device} associated with the Localpoint service.</p>
+		<p>Returns the {@link <a href="../Protocols/ILPDevice.html">ILPDevice</a> device} associated with the location marketing service.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (id&lt;<a href="../Protocols/ILPDevice.html">ILPDevice</a>&gt;)getDevice</code></div>
+	<div class="method-subsection method-declaration"><code>- (id&lt;ILPDevice&gt;)getDevice</code></div>
 
     
 	
@@ -261,7 +304,7 @@
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>the {@link <a href="../Protocols/ILPDevice.html">ILPDevice</a> device} associated with the Localpoint service</p>
+		<p>the {@link <a href="../Protocols/ILPDevice.html">ILPDevice</a> device} associated with the location marketing service</p>
 	</div>
 	
 	
@@ -294,12 +337,12 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns the {@link <a href="../Protocols/ILPLocationProvider.html">ILPLocationProvider</a> location provider} associated with the Localpoint service.</p>
+		<p>Returns the {@link <a href="../Protocols/ILPLocationProvider.html">ILPLocationProvider</a> location provider} associated with the location marketing service.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (id&lt;<a href="../Protocols/ILPLocationProvider.html">ILPLocationProvider</a>&gt;)getLocationProvider</code></div>
+	<div class="method-subsection method-declaration"><code>- (id&lt;ILPLocationProvider&gt;)getLocationProvider</code></div>
 
     
 	
@@ -307,7 +350,7 @@
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>the {@link <a href="../Protocols/ILPLocationProvider.html">ILPLocationProvider</a> location provider} associated with the Localpoint service</p>
+		<p>the {@link <a href="../Protocols/ILPLocationProvider.html">ILPLocationProvider</a> location provider} associated with the location marketing service</p>
 	</div>
 	
 	
@@ -340,12 +383,12 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns the {@link <a href="../Protocols/ILPMessageProvider.html">ILPMessageProvider</a> message provider} associated with the Localpoint service.</p>
+		<p>Returns the {@link <a href="../Protocols/ILPMessageProvider.html">ILPMessageProvider</a> message provider} associated with the location marketing service.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (id&lt;<a href="../Protocols/ILPMessageProvider.html">ILPMessageProvider</a>&gt;)getMessageProvider</code></div>
+	<div class="method-subsection method-declaration"><code>- (id&lt;ILPMessageProvider&gt;)getMessageProvider</code></div>
 
     
 	
@@ -353,7 +396,7 @@
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>the {@link <a href="../Protocols/ILPMessageProvider.html">ILPMessageProvider</a> message provider} associated with the Localpoint service</p>
+		<p>the {@link <a href="../Protocols/ILPMessageProvider.html">ILPMessageProvider</a> message provider} associated with the location marketing service</p>
 	</div>
 	
 	
@@ -386,12 +429,12 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns the version for the Localpoint SDK.</p>
+		<p>Returns the version for the location marketing SDK.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (id&lt;<a href="../Protocols/ILPVersion.html">ILPVersion</a>&gt;)getSDKVersion</code></div>
+	<div class="method-subsection method-declaration"><code>- (id&lt;ILPVersion&gt;)getSDKVersion</code></div>
 
     
 	
@@ -399,7 +442,7 @@
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>the version for the Localpoint SDK</p>
+		<p>the version for the location marketing SDK</p>
 	</div>
 	
 	
@@ -432,12 +475,12 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns the {@link <a href="../Protocols/ILPUser.html">ILPUser</a> user} of the Localpoint service.</p>
+		<p>Returns the {@link <a href="../Protocols/ILPUser.html">ILPUser</a> user} of the location marketing service.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (id&lt;<a href="../Protocols/ILPUser.html">ILPUser</a>&gt;)getUser</code></div>
+	<div class="method-subsection method-declaration"><code>- (id&lt;ILPUser&gt;)getUser</code></div>
 
     
 	
@@ -445,7 +488,7 @@
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>the {@link <a href="../Protocols/ILPUser.html">ILPUser</a> user} of the Localpoint service</p>
+		<p>the {@link <a href="../Protocols/ILPUser.html">ILPUser</a> user} of the location marketing service</p>
 	</div>
 	
 	
@@ -519,12 +562,12 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Registers the {@link <a href="../Protocols/ILPLocalNotificationListener.html">ILPLocalNotificationListener</a> local notification listener} associated with the Localpoint service.</p>
+		<p>Registers the {@link <a href="../Protocols/ILPLocalNotificationListener.html">ILPLocalNotificationListener</a> local notification listener} associated with the location marketing service.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)setLocalNotificationListener:(id&lt;<a href="../Protocols/ILPLocalNotificationListener.html">ILPLocalNotificationListener</a>&gt;)<em>listener</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)setLocalNotificationListener:(id&lt;ILPLocalNotificationListener&gt;)<em>listener</em></code></div>
 
     
 	
@@ -565,7 +608,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Starts this service.</p>
+		<p>Starts the service.</p>
 	</div>		
 	
     
@@ -582,7 +625,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Turns on the SDK and puts it into a ready state to begin device registration and start location services. This call has no effect if this service has previously been started.
+		<p>Turns on the SDK and puts it into a ready state to begin device registration and start location marketing services. This call has no effect if this service has previously been started.
 </p></p>
 	</div>
 	
@@ -607,7 +650,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Stops the Localpoint service.</p>
+		<p>Stops the location marketing service.</p>
 	</div>		
 	
     
@@ -625,47 +668,6 @@
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
 		<p>Turns off the SDK and stops location services. This call has no effect if this service has previously been stopped.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">ILPLocalpointService.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/enableMotionActivity" title="enableMotionActivity"></a>
-	<h3 class="subsubtitle method-title">enableMotionActivity</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Enable motion activity service, which helps SDK get more precise location and save battery life.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)enableMotionActivity</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>To enable motion activity services, the CoreMotion.framework is required.</p>
 	</div>
 	
 	
@@ -700,7 +702,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 Phunware, Inc.. All rights reserved. (Last updated: 2014-09-15)</span><br />
+						<p><span class="copyright">&copy; 2014 Phunware, Inc.. All rights reserved. (Last updated: 2014-11-26)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

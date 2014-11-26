@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>ILPMessageListener Protocol Reference</title>
+		<title>Localpoint Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
@@ -16,7 +16,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">ILPMessageListener Protocol Reference</h1>
+				<h1 class="hideInXcode">Localpoint Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -39,15 +39,11 @@
 	
 	
 	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/serviceName">&nbsp;&nbsp;&nbsp;&nbsp;+ serviceName</option>
 	
 	
-	<option value="instance_methods">Instance Methods</option>
-	
-	<option value="//api/name/onAdd:">&nbsp;&nbsp;&nbsp;&nbsp;- onAdd:</option>
-	
-	<option value="//api/name/onDelete:">&nbsp;&nbsp;&nbsp;&nbsp;- onDelete:</option>
-	
-	<option value="//api/name/onModify:">&nbsp;&nbsp;&nbsp;&nbsp;- onModify:</option>
 	
 	
 	
@@ -73,24 +69,20 @@
 
 
 
-
-
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/onAdd:">onAdd:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/onDelete:">onDelete:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/onModify:">onModify:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/serviceName">serviceName</a></span></li>
 	
 </ul></li>
+
+
 
 
 			</ul>
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="ILPMessageListener Protocol Reference" name="top"></a>
+				<a title="Localpoint Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -99,18 +91,18 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">ILPMessageListener Protocol Reference</h1>
+						<h1 class="title title-header">Localpoint Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
-	<td class="specification-title">Conforms to</td>
+	<td class="specification-title">Inherits from</td>
 	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">ILPMessageListener.h</td>
+	<td class="specification-value">Localpoint.h<br />Localpoint.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -120,9 +112,9 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>A message listener receives updates concerning {@link <a href="../Protocols/ILPMessage.html">ILPMessage</a> messages}.</p>
+						<p>Location marketing framework container</p>
 
-<p>@version 1.1.0</p>
+<p>@version 2.6.0</p>
 					</div>
 					
 					
@@ -140,19 +132,7 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/onAdd:">&ndash;&nbsp;onAdd:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/onDelete:">&ndash;&nbsp;onDelete:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/onModify:">&ndash;&nbsp;onModify:</a></code>
+		<code><a href="#//api/name/serviceName">+&nbsp;serviceName</a></code>
 	</span>
 	
 	
@@ -167,37 +147,25 @@
 					
 					
 					
-					
-					
 					<div class="section section-methods">
-						<a title="Instance Methods" name="instance_methods"></a>
-						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/onAdd:" title="onAdd:"></a>
-	<h3 class="subsubtitle method-title">onAdd:</h3>
+	<a name="//api/name/serviceName" title="serviceName"></a>
+	<h3 class="subsubtitle method-title">serviceName</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Informs this listener that a new {@link <a href="../Protocols/ILPMessage.html">ILPMessage</a> message} has been added to the {@link <a href="../Protocols/ILPMessageProvider.html">ILPMessageProvider</a> message provider} associated with the application.</p>
+		<p>Returns the name of the SDK, it&rsquo;s <code>PWLocalpoint</code>.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)onAdd:(id&lt;ILPMessage&gt;)<em>message</em></code></div>
+	<div class="method-subsection method-declaration"><code>+ (NSString *)serviceName</code></div>
 
     
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>message</em></dt>
-			<dd><p>The message that was added to the message provider (should never be <code>nil</code>)</p></dd>
-		</dl>
-		
-	</div>
 	
 	
 	
@@ -213,105 +181,15 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">ILPMessageListener.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/onDelete:" title="onDelete:"></a>
-	<h3 class="subsubtitle method-title">onDelete:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Informs this listener that a {@link <a href="../Protocols/ILPMessage.html">ILPMessage</a> message} previously known to the {@link <a href="../Protocols/ILPMessageProvider.html">ILPMessageProvider</a> message provider} associated with the application was deleted from the provider.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)onDelete:(id&lt;ILPID&gt;)<em>id_</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>id_</em></dt>
-			<dd><p>The unique identifier of the message that was deleted (should never be <code>nil</code>)</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">ILPMessageListener.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/onModify:" title="onModify:"></a>
-	<h3 class="subsubtitle method-title">onModify:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Informs this listener that a {@link <a href="../Protocols/ILPMessage.html">ILPMessage</a> message} already known to the {@link <a href="../Protocols/ILPMessageProvider.html">ILPMessageProvider</a> message provider} associated with the application was modified in some way.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)onModify:(id&lt;ILPMessage&gt;)<em>message</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>message</em></dt>
-			<dd><p>The message that was modified (should never be <code>nil</code>)</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">ILPMessageListener.h</code><br />
+		<code class="declared-in-ref">Localpoint.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 					</div>
+					
+					
 					
 					
                     

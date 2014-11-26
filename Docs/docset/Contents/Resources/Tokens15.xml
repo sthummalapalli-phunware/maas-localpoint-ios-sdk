@@ -1,40 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/ILPLocationOrderingFactory.html">
+	<File path="Protocols/ILPLocationListener.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/ILPLocationOrderingFactory</TokenIdentifier>
-			<Abstract type="html">A location ordering factory provides {@link ILPOrdering orderings} that operate on {@link ILPLocation locations}.</Abstract>
-			<DeclaredIn>ILPLocationOrderingFactory.h</DeclaredIn>
-            <Availability type="html">(
-    &quot;1.0.0&quot;
-)</Availability>
+			<TokenIdentifier>//apple_ref/occ/intf/ILPLocationListener</TokenIdentifier>
+			<Abstract type="html">A location listener receives updates concerning {@link ILPLocation locations}.</Abstract>
+			<DeclaredIn>ILPLocationListener.h</DeclaredIn>
+            <Availability type="html"></Availability>
 			
 			<NodeRef refid="15"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocationOrderingFactory/getAscendingDistanceOrdering</TokenIdentifier>
-			<Abstract type="html">Returns a filter that sorts locations by ascending distance from the last known geopoint of the device.</Abstract>
-			<DeclaredIn>ILPLocationOrderingFactory.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocationListener/onAdd:</TokenIdentifier>
+			<Abstract type="html">Informs this listener that a new {@link ILPLocation location} has been added to the {@link ILPLocationProvider location provider} associated with the application.</Abstract>
+			<DeclaredIn>ILPLocationListener.h</DeclaredIn>
 			
-			<Declaration>- (id&lt;ILPOrdering&gt;)getAscendingDistanceOrdering</Declaration>
+			<Declaration>- (void)onAdd:(id&lt;ILPLocation&gt;)location</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>location</Name>
+					<Abstract type="html">The location that was added to the location provider (should never be &lt;code&gt;nil&lt;/code&gt;)</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			<ReturnValue><Abstract type="html">a filter that sorts locations by ascending distance from the last known geopoint of the device</Abstract></ReturnValue>
-			<Anchor>//api/name/getAscendingDistanceOrdering</Anchor>
+			<Anchor>//api/name/onAdd:</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocationOrderingFactory/getDescendingDistanceOrdering</TokenIdentifier>
-			<Abstract type="html">Returns a filter that sorts locations by descending distance from the last known geopoint of the device.</Abstract>
-			<DeclaredIn>ILPLocationOrderingFactory.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocationListener/onCheckInFailure:withError:</TokenIdentifier>
+			<Abstract type="html">Notifies this listener of a failed check-in.</Abstract>
+			<DeclaredIn>ILPLocationListener.h</DeclaredIn>
 			
-			<Declaration>- (id&lt;ILPOrdering&gt;)getDescendingDistanceOrdering</Declaration>
+			<Declaration>- (void)onCheckInFailure:(id&lt;ILPLocation&gt;)location withError:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>location</Name>
+					<Abstract type="html">The location at which the failed check-in was to have occurred (should never be &lt;code&gt;nil&lt;/code&gt;)</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">The error that caused the failure (should never be &lt;code&gt;nil&lt;/code&gt;)</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			<ReturnValue><Abstract type="html">a filter that sorts locations by descending distance from last known geopoint of the device</Abstract></ReturnValue>
-			<Anchor>//api/name/getDescendingDistanceOrdering</Anchor>
+			<Anchor>//api/name/onCheckInFailure:withError:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocationListener/onCheckInSuccess:</TokenIdentifier>
+			<Abstract type="html">Notifies this listener of a successful check-in.
+*</Abstract>
+			<DeclaredIn>ILPLocationListener.h</DeclaredIn>
+			
+			<Declaration>- (void)onCheckInSuccess:(id&lt;ILPLocation&gt;)location</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>location</Name>
+					<Abstract type="html">The location at which the successful check-in occurred (should never be &lt;code&gt;nil&lt;/code&gt;)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onCheckInSuccess:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocationListener/onDelete:</TokenIdentifier>
+			<Abstract type="html">Informs this listener that a {@link ILPLocation location} previously known to the {@link ILPLocationProvider location provider} associated with the application was deleted from the provider.</Abstract>
+			<DeclaredIn>ILPLocationListener.h</DeclaredIn>
+			
+			<Declaration>- (void)onDelete:(id&lt;ILPID&gt;)id_</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>id_</Name>
+					<Abstract type="html">The unique identifier of the location that was deleted (should never be &lt;code&gt;nil&lt;/code&gt;)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onDelete:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocationListener/onEntry:</TokenIdentifier>
+			<Abstract type="html">Informs this listener that the server has determined that the given {@link ILPLocation location} has been entered.</Abstract>
+			<DeclaredIn>ILPLocationListener.h</DeclaredIn>
+			
+			<Declaration>- (void)onEntry:(id&lt;ILPLocation&gt;)location</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>location</Name>
+					<Abstract type="html">The location that was entered (should never be &lt;code&gt;nil&lt;/code&gt;)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onEntry:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocationListener/onExit:</TokenIdentifier>
+			<Abstract type="html">Informs this listener that the server has determined that the given {@link ILPLocation location} has been exited.</Abstract>
+			<DeclaredIn>ILPLocationListener.h</DeclaredIn>
+			
+			<Declaration>- (void)onExit:(id&lt;ILPLocation&gt;)location</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>location</Name>
+					<Abstract type="html">The location that was exited (should never be &lt;code&gt;nil&lt;/code&gt;)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onExit:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocationListener/onModify:</TokenIdentifier>
+			<Abstract type="html">Informs this listener that a {@link ILPLocation location} already known to the {@link ILPLocationProvider location provider} associated with the application was modified in some way.</Abstract>
+			<DeclaredIn>ILPLocationListener.h</DeclaredIn>
+			
+			<Declaration>- (void)onModify:(id&lt;ILPLocation&gt;)location</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>location</Name>
+					<Abstract type="html">The location that was modified (should never be &lt;code&gt;nil&lt;/code&gt;)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onModify:</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		

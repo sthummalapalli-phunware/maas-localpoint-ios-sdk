@@ -1,40 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/ILPGeopoint.html">
+	<File path="Protocols/ILPFilter.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/ILPGeopoint</TokenIdentifier>
-			<Abstract type="html">A geopoint is a coordinate in the physical world.</Abstract>
-			<DeclaredIn>ILPGeopoint.h</DeclaredIn>
-            <Availability type="html">(
-    &quot;1.0.0&quot;
-)</Availability>
+			<TokenIdentifier>//apple_ref/occ/intf/ILPFilter</TokenIdentifier>
+			<Abstract type="html">A filter can determine the membership of any object in its domain within an implied set.</Abstract>
+			<DeclaredIn>ILPFilter.h</DeclaredIn>
+            <Availability type="html"></Availability>
 			
 			<NodeRef refid="7"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/ILPGeopoint/getLatitude</TokenIdentifier>
-			<Abstract type="html">Returns the latitude of this geopoint.</Abstract>
-			<DeclaredIn>ILPGeopoint.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPFilter/accept:</TokenIdentifier>
+			<Abstract type="html">Indicates whether the given object belongs to the set implicitly defined by this filter.</Abstract>
+			<DeclaredIn>ILPFilter.h</DeclaredIn>
 			
-			<Declaration>- (double)getLatitude</Declaration>
-			
-			<ReturnValue><Abstract type="html">the latitude of this geopoint</Abstract></ReturnValue>
-			<Anchor>//api/name/getLatitude</Anchor>
-            <NodeRef refid="7"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/ILPGeopoint/getLongitude</TokenIdentifier>
-			<Abstract type="html">Returns the longitude of this geopoint.</Abstract>
-			<DeclaredIn>ILPGeopoint.h</DeclaredIn>
-			
-			<Declaration>- (double)getLongitude</Declaration>
-			
-			<ReturnValue><Abstract type="html">the longitude of this geopoint</Abstract></ReturnValue>
-			<Anchor>//api/name/getLongitude</Anchor>
+			<Declaration>- (BOOL)accept:(id)obj</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>obj</Name>
+					<Abstract type="html">The object to be tested for membership</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">&lt;code&gt;YES&lt;/code&gt; if the given object belongs to the set implicitly defined by this filter; &lt;code&gt;NO&lt;/code&gt; otherwise</Abstract></ReturnValue>
+			<Anchor>//api/name/accept:</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		

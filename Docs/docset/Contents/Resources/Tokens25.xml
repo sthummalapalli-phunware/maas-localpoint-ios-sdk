@@ -1,64 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/ILPVersion.html">
+	<File path="Protocols/ILPUser.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/ILPVersion</TokenIdentifier>
-			<Abstract type="html">A version describes the variant of the Localpoint SDK installed in the application.</Abstract>
-			<DeclaredIn>ILPVersion.h</DeclaredIn>
-            <Availability type="html">(
-    &quot;1.0.0&quot;
-)</Availability>
+			<TokenIdentifier>//apple_ref/occ/intf/ILPUser</TokenIdentifier>
+			<Abstract type="html">The user of the location marketing service.</Abstract>
+			<DeclaredIn>ILPUser.h</DeclaredIn>
+            <Availability type="html"></Availability>
 			
 			<NodeRef refid="25"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/ILPVersion/getMajorVersion</TokenIdentifier>
-			<Abstract type="html">Returns the major version (most-significant digit) of the Localpoint SDK.</Abstract>
-			<DeclaredIn>ILPVersion.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPUser/getAttributeManager</TokenIdentifier>
+			<Abstract type="html">Returns the object managing user attributes.</Abstract>
+			<DeclaredIn>ILPUser.h</DeclaredIn>
 			
-			<Declaration>- (int)getMajorVersion</Declaration>
+			<Declaration>- (id&lt;ILPAttributeManager&gt;)getAttributeManager</Declaration>
 			
-			<ReturnValue><Abstract type="html">the major version (most-significant digit) of the Localpoint SDK</Abstract></ReturnValue>
-			<Anchor>//api/name/getMajorVersion</Anchor>
-            <NodeRef refid="25"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/ILPVersion/getMinorVersion</TokenIdentifier>
-			<Abstract type="html">Returns the minor version (second most-significant digit) of the Localpoint SDK.</Abstract>
-			<DeclaredIn>ILPVersion.h</DeclaredIn>
-			
-			<Declaration>- (int)getMinorVersion</Declaration>
-			
-			<ReturnValue><Abstract type="html">the minor version (second most-significant digit) of the Localpoint SDK</Abstract></ReturnValue>
-			<Anchor>//api/name/getMinorVersion</Anchor>
-            <NodeRef refid="25"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/ILPVersion/getRevisionVersion</TokenIdentifier>
-			<Abstract type="html">Returns the revision version (least-significant digit) of the Localpoint SDK.</Abstract>
-			<DeclaredIn>ILPVersion.h</DeclaredIn>
-			
-			<Declaration>- (int)getRevisionVersion</Declaration>
-			
-			<ReturnValue><Abstract type="html">the revision version (least-significant digit) of the Localpoint SDK.</Abstract></ReturnValue>
-			<Anchor>//api/name/getRevisionVersion</Anchor>
-            <NodeRef refid="25"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/ILPVersion/getValue</TokenIdentifier>
-			<Abstract type="html">Returns a printable form of this version.</Abstract>
-			<DeclaredIn>ILPVersion.h</DeclaredIn>
-			
-			<Declaration>- (NSString *)getValue</Declaration>
-			
-			<ReturnValue><Abstract type="html">a printable form of this version</Abstract></ReturnValue>
-			<Anchor>//api/name/getValue</Anchor>
+			<ReturnValue><Abstract type="html">the user attribute manager</Abstract></ReturnValue>
+			<Anchor>//api/name/getAttributeManager</Anchor>
             <NodeRef refid="25"/>
 		</Token>
 		

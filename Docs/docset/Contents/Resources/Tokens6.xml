@@ -1,33 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/ILPFilter.html">
+	<File path="Protocols/ILPDevice.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/ILPFilter</TokenIdentifier>
-			<Abstract type="html">A filter can determine membership of any object in its domain within the set implied by this filter.</Abstract>
-			<DeclaredIn>ILPFilter.h</DeclaredIn>
-            <Availability type="html">(
-    &quot;1.0.0&quot;
-)</Availability>
+			<TokenIdentifier>//apple_ref/occ/intf/ILPDevice</TokenIdentifier>
+			<Abstract type="html">This interface defines device on which the application is running.</Abstract>
+			<DeclaredIn>ILPDevice.h</DeclaredIn>
+            <Availability type="html"></Availability>
 			
 			<NodeRef refid="6"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/ILPFilter/accept:</TokenIdentifier>
-			<Abstract type="html">Indicates whether the given object belongs to the set implicitly defined by this filter.</Abstract>
-			<DeclaredIn>ILPFilter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPDevice/getID</TokenIdentifier>
+			<Abstract type="html">Returns the identifier of this device.</Abstract>
+			<DeclaredIn>ILPDevice.h</DeclaredIn>
 			
-			<Declaration>- (BOOL)accept:(id)obj</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>obj</Name>
-					<Abstract type="html">The object to be tested for membership</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">&lt;code&gt;YES&lt;/code&gt; if the given object belongs to the set implicitly defined by this filter; &lt;code&gt;NO&lt;/code&gt; otherwise</Abstract></ReturnValue>
-			<Anchor>//api/name/accept:</Anchor>
+			<Declaration>- (id&lt;ILPID&gt;)getID</Declaration>
+			
+			<ReturnValue><Abstract type="html">the identifier of this device</Abstract></ReturnValue>
+			<Anchor>//api/name/getID</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPDevice/getLastKnownGeopoint</TokenIdentifier>
+			<Abstract type="html">Returns the last known position of this device.</Abstract>
+			<DeclaredIn>ILPDevice.h</DeclaredIn>
+			
+			<Declaration>- (id&lt;ILPGeopoint&gt;)getLastKnownGeopoint</Declaration>
+			
+			<ReturnValue><Abstract type="html">the last known position of this device</Abstract></ReturnValue>
+			<Anchor>//api/name/getLastKnownGeopoint</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPDevice/getLocationsIn</TokenIdentifier>
+			<Abstract type="html">Returns a set of ILPLocation for which the device is currently located in according to the location marketing server.</Abstract>
+			<DeclaredIn>ILPDevice.h</DeclaredIn>
+			
+			<Declaration>- (NSSet *)getLocationsIn</Declaration>
+			
+			<ReturnValue><Abstract type="html">the set of locations that the device is currently in</Abstract></ReturnValue>
+			<Anchor>//api/name/getLocationsIn</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		

@@ -1,129 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/ILPLocalpointService.html">
+	<File path="Protocols/ILPLocalNotificationListener.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/ILPLocalpointService</TokenIdentifier>
-			<Abstract type="html">A Localpoint service is the entry point for applications to Localpoint functionality.</Abstract>
-			<DeclaredIn>ILPLocalpointService.h</DeclaredIn>
-            <Availability type="html">(
-    &quot;1.0.0&quot;
-)</Availability>
+			<TokenIdentifier>//apple_ref/occ/intf/ILPLocalNotificationListener</TokenIdentifier>
+			<Abstract type="html">A local notification listener receives updates concerning {@link ILPLocalNotification}.</Abstract>
+			<DeclaredIn>ILPLocalNotificationListener.h</DeclaredIn>
+            <Availability type="html"></Availability>
 			
 			<NodeRef refid="11"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocalpointService/getDevice</TokenIdentifier>
-			<Abstract type="html">Returns the {@link ILPDevice device} associated with the Localpoint service.</Abstract>
-			<DeclaredIn>ILPLocalpointService.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocalNotificationListener/onOverrideLocalNotification:</TokenIdentifier>
+			<Abstract type="html">Informs this listener that a new {@link ILPLocalNotification notification} has been received from the server. Returns a boolean value that indicates whether this listener will override the local notification.</Abstract>
+			<DeclaredIn>ILPLocalNotificationListener.h</DeclaredIn>
 			
-			<Declaration>- (id&lt;ILPDevice&gt;)getDevice</Declaration>
-			
-			<ReturnValue><Abstract type="html">the {@link ILPDevice device} associated with the Localpoint service</Abstract></ReturnValue>
-			<Anchor>//api/name/getDevice</Anchor>
-            <NodeRef refid="11"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocalpointService/getUser</TokenIdentifier>
-			<Abstract type="html">Returns the {@link ILPUser user} of the Localpoint service.</Abstract>
-			<DeclaredIn>ILPLocalpointService.h</DeclaredIn>
-			
-			<Declaration>- (id&lt;ILPUser&gt;)getUser</Declaration>
-			
-			<ReturnValue><Abstract type="html">the {@link ILPUser user} of the Localpoint service</Abstract></ReturnValue>
-			<Anchor>//api/name/getUser</Anchor>
-            <NodeRef refid="11"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocalpointService/getLocationProvider</TokenIdentifier>
-			<Abstract type="html">Returns the {@link ILPLocationProvider location provider} associated with the Localpoint service.</Abstract>
-			<DeclaredIn>ILPLocalpointService.h</DeclaredIn>
-			
-			<Declaration>- (id&lt;ILPLocationProvider&gt;)getLocationProvider</Declaration>
-			
-			<ReturnValue><Abstract type="html">the {@link ILPLocationProvider location provider} associated with the Localpoint service</Abstract></ReturnValue>
-			<Anchor>//api/name/getLocationProvider</Anchor>
-            <NodeRef refid="11"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocalpointService/getMessageProvider</TokenIdentifier>
-			<Abstract type="html">Returns the {@link ILPMessageProvider message provider} associated with the Localpoint service.</Abstract>
-			<DeclaredIn>ILPLocalpointService.h</DeclaredIn>
-			
-			<Declaration>- (id&lt;ILPMessageProvider&gt;)getMessageProvider</Declaration>
-			
-			<ReturnValue><Abstract type="html">the {@link ILPMessageProvider message provider} associated with the Localpoint service</Abstract></ReturnValue>
-			<Anchor>//api/name/getMessageProvider</Anchor>
-            <NodeRef refid="11"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocalpointService/getSDKVersion</TokenIdentifier>
-			<Abstract type="html">Returns the version for the Localpoint SDK.</Abstract>
-			<DeclaredIn>ILPLocalpointService.h</DeclaredIn>
-			
-			<Declaration>- (id&lt;ILPVersion&gt;)getSDKVersion</Declaration>
-			
-			<ReturnValue><Abstract type="html">the version for the Localpoint SDK</Abstract></ReturnValue>
-			<Anchor>//api/name/getSDKVersion</Anchor>
-            <NodeRef refid="11"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocalpointService/isBrandEnabled</TokenIdentifier>
-			<Abstract type="html">Indicates whether the brand identifier used by this service is enabled.</Abstract>
-			<DeclaredIn>ILPLocalpointService.h</DeclaredIn>
-			
-			<Declaration>- (BOOL)isBrandEnabled</Declaration>
-			
-			<ReturnValue><Abstract type="html">&lt;code&gt;YES&lt;/code&gt; if the brand identifier is enabled; &lt;code&gt;NO&lt;/code&gt; otherwise</Abstract></ReturnValue>
-			<Anchor>//api/name/isBrandEnabled</Anchor>
-            <NodeRef refid="11"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocalpointService/start</TokenIdentifier>
-			<Abstract type="html">Starts this service.</Abstract>
-			<DeclaredIn>ILPLocalpointService.h</DeclaredIn>
-			
-			<Declaration>- (void)start</Declaration>
-			
-			
-			<Anchor>//api/name/start</Anchor>
-            <NodeRef refid="11"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocalpointService/stop</TokenIdentifier>
-			<Abstract type="html">Stops the Localpoint service.</Abstract>
-			<DeclaredIn>ILPLocalpointService.h</DeclaredIn>
-			
-			<Declaration>- (void)stop</Declaration>
-			
-			
-			<Anchor>//api/name/stop</Anchor>
-            <NodeRef refid="11"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocalpointService/setLocalNotificationListener:</TokenIdentifier>
-			<Abstract type="html">Registers the {@link ILPLocalNotificationListener local notification listener} associated with the Localpoint service.</Abstract>
-			<DeclaredIn>ILPLocalpointService.h</DeclaredIn>
-			
-			<Declaration>- (void)setLocalNotificationListener:(id&lt;ILPLocalNotificationListener&gt;)listener</Declaration>
+			<Declaration>- (BOOL)onOverrideLocalNotification:(id&lt;ILPLocalNotification&gt;)notification</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>listener</Name>
-					<Abstract type="html">the {@link ILPLocalNotificationListener local notification listener}</Abstract>
+					<Name>notification</Name>
+					<Abstract type="html">The local notification data received from the server.</Abstract>
 				</Parameter>
 			</Parameters>
-			
-			<Anchor>//api/name/setLocalNotificationListener:</Anchor>
+			<ReturnValue><Abstract type="html">{@code true} the application will fire local notification;
+         {@code false} the SDK will fire the local notification and use the {@link ILPLocalNotification notification} from {@link ILPLocalNotificationListener#onOverrideLocalNotification(ILPLocalNotification}</Abstract></ReturnValue>
+			<Anchor>//api/name/onOverrideLocalNotification:</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		

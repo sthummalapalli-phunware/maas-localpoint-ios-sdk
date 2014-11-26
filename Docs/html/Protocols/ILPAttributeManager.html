@@ -45,6 +45,10 @@
 	
 	<option value="//api/name/addListener:">&nbsp;&nbsp;&nbsp;&nbsp;- addListener:</option>
 	
+	<option value="//api/name/getProfileAttributes:">&nbsp;&nbsp;&nbsp;&nbsp;- getProfileAttributes:</option>
+	
+	<option value="//api/name/getUserAttributes:">&nbsp;&nbsp;&nbsp;&nbsp;- getUserAttributes:</option>
+	
 	<option value="//api/name/removeAllListeners">&nbsp;&nbsp;&nbsp;&nbsp;- removeAllListeners</option>
 	
 	<option value="//api/name/removeListener:">&nbsp;&nbsp;&nbsp;&nbsp;- removeListener:</option>
@@ -82,6 +86,10 @@
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addListener:">addListener:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getProfileAttributes:">getProfileAttributes:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getUserAttributes:">getUserAttributes:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeAllListeners">removeAllListeners</a></span></li>
 	
@@ -176,6 +184,18 @@
 	</span>
 	
 	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getUserAttributes:">&ndash;&nbsp;getUserAttributes:</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getProfileAttributes:">&ndash;&nbsp;getProfileAttributes:</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
 </li>
 						</ul>
 						
@@ -205,7 +225,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)addListener:(id&lt;<a href="../Protocols/ILPAttributeListener.html">ILPAttributeListener</a>&gt;)<em>listener</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)addListener:(id&lt;ILPAttributeListener&gt;)<em>listener</em></code></div>
 
     
 	
@@ -215,6 +235,98 @@
 		<dl class="argument-def parameter-def">
 			<dt><em>listener</em></dt>
 			<dd><p>The listener to be added (must not be <code>nil</code>)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ILPAttributeManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getProfileAttributes:" title="getProfileAttributes:"></a>
+	<h3 class="subsubtitle method-title">getProfileAttributes:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get profile attribute</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)getProfileAttributes:(LPServerProcessCompletion)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>The block returns profile attribute or error</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ILPAttributeManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getUserAttributes:" title="getUserAttributes:"></a>
+	<h3 class="subsubtitle method-title">getUserAttributes:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get user attribute</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)getUserAttributes:(LPServerProcessCompletion)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>The block returns user attribute or error</p></dd>
 		</dl>
 		
 	</div>
@@ -287,7 +399,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)removeListener:(id&lt;<a href="../Protocols/ILPAttributeListener.html">ILPAttributeListener</a>&gt;)<em>listener</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)removeListener:(id&lt;ILPAttributeListener&gt;)<em>listener</em></code></div>
 
     
 	
@@ -348,7 +460,7 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>attrs</em></dt>
-			<dd><p>The new profile attributes to be associated with the device. <code>attrs</code> become the complete set of the profile attributes - any existing attributes not in <code>attrs</code> are removed.</p></dd>
+			<dd><p>The new profile attributes to be associated with the device. <code>attrs</code> become the complete set of the profile attributes and any existing attributes not in <code>attrs</code> are removed.</p></dd>
 		</dl>
 		
 	</div>
@@ -394,7 +506,7 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>attrs</em></dt>
-			<dd><p>new user attributes to be associated with the device. <code>attrs</code> become the complete set of the user attributes - any existing attributes not in <code>attrs</code> are removed.</p></dd>
+			<dd><p>The new user attributes to be associated with the device. <code>attrs</code> become the complete set of the user attributes and any existing attributes not in <code>attrs</code> are removed.</p></dd>
 		</dl>
 		
 	</div>
@@ -407,7 +519,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Note: Currently only one user attribute named &ldquo;ID1&rdquo; is supported; its value must be a string. Any other attributes are ignored.</p>
+		<p>Note: Currently, only one user attribute named &ldquo;ID1&rdquo; is supported and its value must be a string. Any other attributes are ignored.</p>
 	</div>
 	
 	
@@ -442,7 +554,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 Phunware, Inc.. All rights reserved. (Last updated: 2014-09-15)</span><br />
+						<p><span class="copyright">&copy; 2014 Phunware, Inc.. All rights reserved. (Last updated: 2014-11-26)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

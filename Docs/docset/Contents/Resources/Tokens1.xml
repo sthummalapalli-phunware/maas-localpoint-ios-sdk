@@ -6,9 +6,7 @@
 			<TokenIdentifier>//apple_ref/occ/cl/ILPOrdering</TokenIdentifier>
 			<Abstract type="html">An ordering can determine the relative ordering of any two objects in a domain.</Abstract>
 			<DeclaredIn>ILPOrdering.h</DeclaredIn>
-            <Availability type="html">(
-    &quot;1.0.0&quot;
-)</Availability>
+            <Availability type="html"></Availability>
 			
 			<NodeRef refid="1"/>
 		</Token>
