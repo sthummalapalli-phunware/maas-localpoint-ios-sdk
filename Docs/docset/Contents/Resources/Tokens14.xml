@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ILPLocationFilterFactory.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ILPLocationFilterFactory</TokenIdentifier>
+			<Abstract type="html">A location filter factory provides {@link ILPFilter filters} that operate on {@link ILPLocation locations}.</Abstract>
+			<DeclaredIn>ILPLocationFilterFactory.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="14"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocationFilterFactory/getAllFilter</TokenIdentifier>
+			<Abstract type="html">Returns a filter that accepts all locations.</Abstract>
+			<DeclaredIn>ILPLocationFilterFactory.h</DeclaredIn>
+			
+			<Declaration>- (id&lt;ILPFilter&gt;)getAllFilter</Declaration>
+			
+			<ReturnValue><Abstract type="html">a filter that accepts all locations</Abstract></ReturnValue>
+			<Anchor>//api/name/getAllFilter</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocationFilterFactory/getAllowsCheckInFilter</TokenIdentifier>
+			<Abstract type="html">Returns a filter that accepts only those locations for which check-in has been enabled.</Abstract>
+			<DeclaredIn>ILPLocationFilterFactory.h</DeclaredIn>
+			
+			<Declaration>- (id&lt;ILPFilter&gt;)getAllowsCheckInFilter</Declaration>
+			
+			<ReturnValue><Abstract type="html">a filter that accepts only those locations for which check-in has been enabled</Abstract></ReturnValue>
+			<Anchor>//api/name/getAllowsCheckInFilter</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocationFilterFactory/getHasTagFilter:</TokenIdentifier>
+			<Abstract type="html">Returns a filter that accepts only those locations with the given tag.</Abstract>
+			<DeclaredIn>ILPLocationFilterFactory.h</DeclaredIn>
+			
+			<Declaration>- (id&lt;ILPFilter&gt;)getHasTagFilter:(NSString *)tag</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tag</Name>
+					<Abstract type="html">The tag that must be present on the locations accepted by the returned filter</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a filter that accepts only those locations with the given tag
+
+@throws IllegalArgumentException if the given tag is &lt;code&gt;nil&lt;/code&gt;</Abstract></ReturnValue>
+			<Anchor>//api/name/getHasTagFilter:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocationFilterFactory/getWithinDistanceFilter:</TokenIdentifier>
+			<Abstract type="html">Returns a filter that accepts only those locations that are within the given distance from the last known geopoint of the device.</Abstract>
+			<DeclaredIn>ILPLocationFilterFactory.h</DeclaredIn>
+			
+			<Declaration>- (id&lt;ILPFilter&gt;)getWithinDistanceFilter:(int)distance</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>distance</Name>
+					<Abstract type="html">The maximum distance a location can be from the last known geopoint and still be accepted by the returned filter in meters</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a filter that accepts only those locations that are within the given distance from the last known geopoint of the device</Abstract></ReturnValue>
+			<Anchor>//api/name/getWithinDistanceFilter:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocationFilterFactory/getDeviceIsInFilter</TokenIdentifier>
+			<Abstract type="html">Returns a filter that accepts only those locations that the device is currently located in according to the location marketing server.</Abstract>
+			<DeclaredIn>ILPLocationFilterFactory.h</DeclaredIn>
+			
+			<Declaration>- (id&lt;ILPFilter&gt;)getDeviceIsInFilter</Declaration>
+			
+			<ReturnValue><Abstract type="html">a filter that accepts only those locations that the device is currently located in according to the location marketing server.</Abstract></ReturnValue>
+			<Anchor>//api/name/getDeviceIsInFilter</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

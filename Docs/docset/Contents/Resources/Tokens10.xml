@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ILPLocalNotification.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ILPLocalNotification</TokenIdentifier>
+			<Abstract type="html">A local notification is a communication (generally marketing-related) sent from the server.</Abstract>
+			<DeclaredIn>ILPLocalNotification.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocalNotification/getNotificationTitle</TokenIdentifier>
+			<Abstract type="html">Returns the title of this local notification.</Abstract>
+			<DeclaredIn>ILPLocalNotification.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)getNotificationTitle</Declaration>
+			
+			<ReturnValue><Abstract type="html">the title of this local notification</Abstract></ReturnValue>
+			<Anchor>//api/name/getNotificationTitle</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocalNotification/getNotificationMessage</TokenIdentifier>
+			<Abstract type="html">Returns the message of this local notification.</Abstract>
+			<DeclaredIn>ILPLocalNotification.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)getNotificationMessage</Declaration>
+			
+			<ReturnValue><Abstract type="html">the message of this local notification</Abstract></ReturnValue>
+			<Anchor>//api/name/getNotificationMessage</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocalNotification/getCampaignType</TokenIdentifier>
+			<Abstract type="html">Returns the campaign type of this local notification.</Abstract>
+			<DeclaredIn>ILPLocalNotification.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)getCampaignType</Declaration>
+			
+			<ReturnValue><Abstract type="html">the campaign type of this local notification</Abstract></ReturnValue>
+			<Anchor>//api/name/getCampaignType</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocalNotification/setNotificationTitle:</TokenIdentifier>
+			<Abstract type="html">Sets the title of this local notification.</Abstract>
+			<DeclaredIn>ILPLocalNotification.h</DeclaredIn>
+			
+			<Declaration>- (void)setNotificationTitle:(NSString *)title</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">The customized title for this local notification.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setNotificationTitle:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocalNotification/setNotificationMessage:</TokenIdentifier>
+			<Abstract type="html">Sets the message of this local notification.</Abstract>
+			<DeclaredIn>ILPLocalNotification.h</DeclaredIn>
+			
+			<Declaration>- (void)setNotificationMessage:(NSString *)message</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>message</Name>
+					<Abstract type="html">The customized message for this local notification.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setNotificationMessage:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocalNotification/setCampaignTitle:</TokenIdentifier>
+			<Abstract type="html">Sets the campaign title of this local notification.</Abstract>
+			<DeclaredIn>ILPLocalNotification.h</DeclaredIn>
+			
+			<Declaration>- (void)setCampaignTitle:(NSString *)campaignTitle</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>campaignTitle</Name>
+					<Abstract type="html">The customized campaign title for this local notification.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setCampaignTitle:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocalNotification/setCampaignBody:</TokenIdentifier>
+			<Abstract type="html">Sets the campaign body of this local notification.</Abstract>
+			<DeclaredIn>ILPLocalNotification.h</DeclaredIn>
+			
+			<Declaration>- (void)setCampaignBody:(NSString *)campaignBody</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>campaignBody</Name>
+					<Abstract type="html">The customized campaign body for this local notification.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setCampaignBody:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

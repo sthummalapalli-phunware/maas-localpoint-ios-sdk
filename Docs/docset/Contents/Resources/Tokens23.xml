@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ILPOrdering.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ILPOrdering</TokenIdentifier>
+			<Abstract type="html">An ordering can determine the relative ordering of any two objects in a domain.</Abstract>
+			<DeclaredIn>ILPOrdering.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="23"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPOrdering/compare:withId:</TokenIdentifier>
+			<Abstract type="html">Compares the two given arguments according to this ordering.</Abstract>
+			<DeclaredIn>ILPOrdering.h</DeclaredIn>
+			
+			<Declaration>- (int)compare:(id)arg1 withId:(id)arg2</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>arg1</Name>
+					<Abstract type="html">The first argument to be compared</Abstract>
+				</Parameter><Parameter>
+					<Name>arg2</Name>
+					<Abstract type="html">The second argument to be compared</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Either {@link #FIRSTLESSTHANSECOND}, {@link #FIRSTEQUALTOSECOND} or {@link #FIRSTGREATERTHAN_SECOND}, depending on whether the first argument is less than, equal to, or greater than the second argument in this ordering</Abstract></ReturnValue>
+			<Anchor>//api/name/compare:withId:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

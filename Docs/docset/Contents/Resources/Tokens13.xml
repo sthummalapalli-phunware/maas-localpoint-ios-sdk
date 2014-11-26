@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ILPLocation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ILPLocation</TokenIdentifier>
+			<Abstract type="html">A location is an area of interest defined in the location marketing console.</Abstract>
+			<DeclaredIn>ILPLocation.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="13"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocation/getBSSID</TokenIdentifier>
+			<Abstract type="html">Returns the basic service set identification (BSSID) associated with this location.</Abstract>
+			<DeclaredIn>ILPLocation.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)getBSSID</Declaration>
+			
+			<ReturnValue><Abstract type="html">the basic service set identification (BSSID) associated with this location</Abstract></ReturnValue>
+			<Anchor>//api/name/getBSSID</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocation/getCenter</TokenIdentifier>
+			<Abstract type="html">Returns the geopoint at the center of this location.</Abstract>
+			<DeclaredIn>ILPLocation.h</DeclaredIn>
+			
+			<Declaration>- (id&lt;ILPGeopoint&gt;)getCenter</Declaration>
+			
+			<ReturnValue><Abstract type="html">the geopoint at the center of this location</Abstract></ReturnValue>
+			<Anchor>//api/name/getCenter</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocation/getDescription</TokenIdentifier>
+			<Abstract type="html">Returns a description of this location.</Abstract>
+			<DeclaredIn>ILPLocation.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)getDescription</Declaration>
+			
+			<ReturnValue><Abstract type="html">a description of this location</Abstract></ReturnValue>
+			<Anchor>//api/name/getDescription</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocation/getID</TokenIdentifier>
+			<Abstract type="html">Returns the internal unique identifier of this location.</Abstract>
+			<DeclaredIn>ILPLocation.h</DeclaredIn>
+			
+			<Declaration>- (id&lt;ILPID&gt;)getID</Declaration>
+			
+			<ReturnValue><Abstract type="html">the internal unique identifier of this location</Abstract></ReturnValue>
+			<Anchor>//api/name/getID</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocation/getCode</TokenIdentifier>
+			<Abstract type="html">Returns the externally defined unique identifier of this location.</Abstract>
+			<DeclaredIn>ILPLocation.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)getCode</Declaration>
+			
+			<ReturnValue><Abstract type="html">the externally defined unique identifier of this location</Abstract></ReturnValue>
+			<Anchor>//api/name/getCode</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocation/getName</TokenIdentifier>
+			<Abstract type="html">Returns the name of this location.</Abstract>
+			<DeclaredIn>ILPLocation.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)getName</Declaration>
+			
+			<ReturnValue><Abstract type="html">the name of this location</Abstract></ReturnValue>
+			<Anchor>//api/name/getName</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocation/getSSID</TokenIdentifier>
+			<Abstract type="html">Returns the service set identification (SSID) associated with this location.</Abstract>
+			<DeclaredIn>ILPLocation.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)getSSID</Declaration>
+			
+			<ReturnValue><Abstract type="html">the service set identification (SSID) associated with this location</Abstract></ReturnValue>
+			<Anchor>//api/name/getSSID</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocation/getTags</TokenIdentifier>
+			<Abstract type="html">Returns the set of tags associated with this location.</Abstract>
+			<DeclaredIn>ILPLocation.h</DeclaredIn>
+			
+			<Declaration>- (NSSet *)getTags</Declaration>
+			
+			<ReturnValue><Abstract type="html">the (possibly empty) set of tags associated with this location</Abstract></ReturnValue>
+			<Anchor>//api/name/getTags</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocation/checkIn</TokenIdentifier>
+			<Abstract type="html">Performs a check-in on this location.</Abstract>
+			<DeclaredIn>ILPLocation.h</DeclaredIn>
+			
+			<Declaration>- (void)checkIn</Declaration>
+			
+			
+			<Anchor>//api/name/checkIn</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocation/isDeviceIn</TokenIdentifier>
+			<Abstract type="html">Returns whether or not the device is currently in this location.</Abstract>
+			<DeclaredIn>ILPLocation.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isDeviceIn</Declaration>
+			
+			<ReturnValue><Abstract type="html">true if the device is currently in this location according to the location marketing server; false otherwise</Abstract></ReturnValue>
+			<Anchor>//api/name/isDeviceIn</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

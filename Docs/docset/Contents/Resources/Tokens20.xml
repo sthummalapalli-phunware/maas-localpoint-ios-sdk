@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ILPMessageListener.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ILPMessageListener</TokenIdentifier>
+			<Abstract type="html">A message listener receives updates concerning {@link ILPMessage messages}.</Abstract>
+			<DeclaredIn>ILPMessageListener.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="20"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPMessageListener/onAdd:</TokenIdentifier>
+			<Abstract type="html">Informs this listener that a new {@link ILPMessage message} has been added to the {@link ILPMessageProvider message provider} associated with the application.</Abstract>
+			<DeclaredIn>ILPMessageListener.h</DeclaredIn>
+			
+			<Declaration>- (void)onAdd:(id&lt;ILPMessage&gt;)message</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>message</Name>
+					<Abstract type="html">The message that was added to the message provider (should never be &lt;code&gt;nil&lt;/code&gt;)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onAdd:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPMessageListener/onDelete:</TokenIdentifier>
+			<Abstract type="html">Informs this listener that a {@link ILPMessage message} previously known to the {@link ILPMessageProvider message provider} associated with the application was deleted from the provider.</Abstract>
+			<DeclaredIn>ILPMessageListener.h</DeclaredIn>
+			
+			<Declaration>- (void)onDelete:(id&lt;ILPID&gt;)id_</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>id_</Name>
+					<Abstract type="html">The unique identifier of the message that was deleted (should never be &lt;code&gt;nil&lt;/code&gt;)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onDelete:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPMessageListener/onModify:</TokenIdentifier>
+			<Abstract type="html">Informs this listener that a {@link ILPMessage message} already known to the {@link ILPMessageProvider message provider} associated with the application was modified in some way.</Abstract>
+			<DeclaredIn>ILPMessageListener.h</DeclaredIn>
+			
+			<Declaration>- (void)onModify:(id&lt;ILPMessage&gt;)message</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>message</Name>
+					<Abstract type="html">The message that was modified (should never be &lt;code&gt;nil&lt;/code&gt;)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/onModify:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

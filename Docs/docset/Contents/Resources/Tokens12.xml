@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ILPLocalpointService.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ILPLocalpointService</TokenIdentifier>
+			<Abstract type="html">The location marketing service is the applications entry point to location marketing functionality.</Abstract>
+			<DeclaredIn>ILPLocalpointService.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocalpointService/getDevice</TokenIdentifier>
+			<Abstract type="html">Returns the {@link ILPDevice device} associated with the location marketing service.</Abstract>
+			<DeclaredIn>ILPLocalpointService.h</DeclaredIn>
+			
+			<Declaration>- (id&lt;ILPDevice&gt;)getDevice</Declaration>
+			
+			<ReturnValue><Abstract type="html">the {@link ILPDevice device} associated with the location marketing service</Abstract></ReturnValue>
+			<Anchor>//api/name/getDevice</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocalpointService/getUser</TokenIdentifier>
+			<Abstract type="html">Returns the {@link ILPUser user} of the location marketing service.</Abstract>
+			<DeclaredIn>ILPLocalpointService.h</DeclaredIn>
+			
+			<Declaration>- (id&lt;ILPUser&gt;)getUser</Declaration>
+			
+			<ReturnValue><Abstract type="html">the {@link ILPUser user} of the location marketing service</Abstract></ReturnValue>
+			<Anchor>//api/name/getUser</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocalpointService/getLocationProvider</TokenIdentifier>
+			<Abstract type="html">Returns the {@link ILPLocationProvider location provider} associated with the location marketing service.</Abstract>
+			<DeclaredIn>ILPLocalpointService.h</DeclaredIn>
+			
+			<Declaration>- (id&lt;ILPLocationProvider&gt;)getLocationProvider</Declaration>
+			
+			<ReturnValue><Abstract type="html">the {@link ILPLocationProvider location provider} associated with the location marketing service</Abstract></ReturnValue>
+			<Anchor>//api/name/getLocationProvider</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocalpointService/getMessageProvider</TokenIdentifier>
+			<Abstract type="html">Returns the {@link ILPMessageProvider message provider} associated with the location marketing service.</Abstract>
+			<DeclaredIn>ILPLocalpointService.h</DeclaredIn>
+			
+			<Declaration>- (id&lt;ILPMessageProvider&gt;)getMessageProvider</Declaration>
+			
+			<ReturnValue><Abstract type="html">the {@link ILPMessageProvider message provider} associated with the location marketing service</Abstract></ReturnValue>
+			<Anchor>//api/name/getMessageProvider</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocalpointService/getSDKVersion</TokenIdentifier>
+			<Abstract type="html">Returns the version for the location marketing SDK.</Abstract>
+			<DeclaredIn>ILPLocalpointService.h</DeclaredIn>
+			
+			<Declaration>- (id&lt;ILPVersion&gt;)getSDKVersion</Declaration>
+			
+			<ReturnValue><Abstract type="html">the version for the location marketing SDK</Abstract></ReturnValue>
+			<Anchor>//api/name/getSDKVersion</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocalpointService/isBrandEnabled</TokenIdentifier>
+			<Abstract type="html">Indicates whether the brand identifier used by this service is enabled.</Abstract>
+			<DeclaredIn>ILPLocalpointService.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isBrandEnabled</Declaration>
+			
+			<ReturnValue><Abstract type="html">&lt;code&gt;YES&lt;/code&gt; if the brand identifier is enabled; &lt;code&gt;NO&lt;/code&gt; otherwise</Abstract></ReturnValue>
+			<Anchor>//api/name/isBrandEnabled</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocalpointService/enableMotionActivity</TokenIdentifier>
+			<Abstract type="html">Enable motion activity for location marketing SDK</Abstract>
+			<DeclaredIn>ILPLocalpointService.h</DeclaredIn>
+			
+			<Declaration>- (void)enableMotionActivity</Declaration>
+			
+			
+			<Anchor>//api/name/enableMotionActivity</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocalpointService/start</TokenIdentifier>
+			<Abstract type="html">Starts the service.</Abstract>
+			<DeclaredIn>ILPLocalpointService.h</DeclaredIn>
+			
+			<Declaration>- (void)start</Declaration>
+			
+			
+			<Anchor>//api/name/start</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocalpointService/stop</TokenIdentifier>
+			<Abstract type="html">Stops the location marketing service.</Abstract>
+			<DeclaredIn>ILPLocalpointService.h</DeclaredIn>
+			
+			<Declaration>- (void)stop</Declaration>
+			
+			
+			<Anchor>//api/name/stop</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPLocalpointService/setLocalNotificationListener:</TokenIdentifier>
+			<Abstract type="html">Registers the {@link ILPLocalNotificationListener local notification listener} associated with the location marketing service.</Abstract>
+			<DeclaredIn>ILPLocalpointService.h</DeclaredIn>
+			
+			<Declaration>- (void)setLocalNotificationListener:(id&lt;ILPLocalNotificationListener&gt;)listener</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>listener</Name>
+					<Abstract type="html">the {@link ILPLocalNotificationListener local notification listener}</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setLocalNotificationListener:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

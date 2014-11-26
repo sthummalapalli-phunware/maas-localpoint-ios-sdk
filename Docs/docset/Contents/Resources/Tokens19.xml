@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ILPMessageFilterFactory.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ILPMessageFilterFactory</TokenIdentifier>
+			<Abstract type="html">A message filter factory provides {@link ILPFilter filters} that operate on {@link ILPMessage messages}.</Abstract>
+			<DeclaredIn>ILPMessageFilterFactory.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="19"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPMessageFilterFactory/getAllFilter</TokenIdentifier>
+			<Abstract type="html">Returns a filter that accepts all messages.</Abstract>
+			<DeclaredIn>ILPMessageFilterFactory.h</DeclaredIn>
+			
+			<Declaration>- (id&lt;ILPFilter&gt;)getAllFilter</Declaration>
+			
+			<ReturnValue><Abstract type="html">a filter that accepts all messages</Abstract></ReturnValue>
+			<Anchor>//api/name/getAllFilter</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPMessageFilterFactory/getExpiredFilter</TokenIdentifier>
+			<Abstract type="html">Returns a filter that accepts expired messages.</Abstract>
+			<DeclaredIn>ILPMessageFilterFactory.h</DeclaredIn>
+			
+			<Declaration>- (id&lt;ILPFilter&gt;)getExpiredFilter</Declaration>
+			
+			<ReturnValue><Abstract type="html">a filter that accepts expired messages</Abstract></ReturnValue>
+			<Anchor>//api/name/getExpiredFilter</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPMessageFilterFactory/getValidFilter</TokenIdentifier>
+			<Abstract type="html">Returns a filter that accepts valid messages.</Abstract>
+			<DeclaredIn>ILPMessageFilterFactory.h</DeclaredIn>
+			
+			<Declaration>- (id&lt;ILPFilter&gt;)getValidFilter</Declaration>
+			
+			<ReturnValue><Abstract type="html">a filter that accepts valid messages</Abstract></ReturnValue>
+			<Anchor>//api/name/getValidFilter</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

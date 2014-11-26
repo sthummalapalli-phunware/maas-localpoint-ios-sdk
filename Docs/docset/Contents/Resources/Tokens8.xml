@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ILPGeopoint.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ILPGeopoint</TokenIdentifier>
+			<Abstract type="html">A geopoint is a coordinate in the physical world.</Abstract>
+			<DeclaredIn>ILPGeopoint.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="8"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPGeopoint/getLatitude</TokenIdentifier>
+			<Abstract type="html">Returns the latitude of this geopoint.</Abstract>
+			<DeclaredIn>ILPGeopoint.h</DeclaredIn>
+			
+			<Declaration>- (double)getLatitude</Declaration>
+			
+			<ReturnValue><Abstract type="html">the latitude of this geopoint</Abstract></ReturnValue>
+			<Anchor>//api/name/getLatitude</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPGeopoint/getLongitude</TokenIdentifier>
+			<Abstract type="html">Returns the longitude of this geopoint.</Abstract>
+			<DeclaredIn>ILPGeopoint.h</DeclaredIn>
+			
+			<Declaration>- (double)getLongitude</Declaration>
+			
+			<ReturnValue><Abstract type="html">the longitude of this geopoint</Abstract></ReturnValue>
+			<Anchor>//api/name/getLongitude</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

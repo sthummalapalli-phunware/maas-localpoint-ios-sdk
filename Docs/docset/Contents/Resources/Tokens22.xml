@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ILPMessageProvider.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ILPMessageProvider</TokenIdentifier>
+			<Abstract type="html">A message provider acts as a store for messages deemed &amp;amp;quot;relevant&amp;amp;quot;
+by the SDK.</Abstract>
+			<DeclaredIn>ILPMessageProvider.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="22"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPMessageProvider/addListener:</TokenIdentifier>
+			<Abstract type="html">Adds the given listener to this provider.</Abstract>
+			<DeclaredIn>ILPMessageProvider.h</DeclaredIn>
+			
+			<Declaration>- (void)addListener:(id&lt;ILPMessageListener&gt;)listener</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>listener</Name>
+					<Abstract type="html">The listener to be added (must never be &lt;code&gt;nil&lt;/code&gt;)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addListener:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPMessageProvider/getFilterFactory</TokenIdentifier>
+			<Abstract type="html">Returns the {@link ILPMessageFilterFactory message filter factory} associated with this provider.</Abstract>
+			<DeclaredIn>ILPMessageProvider.h</DeclaredIn>
+			
+			<Declaration>- (id&lt;ILPMessageFilterFactory&gt;)getFilterFactory</Declaration>
+			
+			<ReturnValue><Abstract type="html">the {@link ILPMessageFilterFactory message filter factory} associated with this provider</Abstract></ReturnValue>
+			<Anchor>//api/name/getFilterFactory</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPMessageProvider/getMessage:</TokenIdentifier>
+			<Abstract type="html">Returns a message with the given identifier.</Abstract>
+			<DeclaredIn>ILPMessageProvider.h</DeclaredIn>
+			
+			<Declaration>- (id&lt;ILPMessage&gt;)getMessage:(id&lt;ILPID&gt;)id_</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>id_</Name>
+					<Abstract type="html">The identifier of the message to be returned (must never be &lt;code&gt;nil&lt;/code&gt;)</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the message with the given identifier or &lt;code&gt;nil&lt;/code&gt;</Abstract></ReturnValue>
+			<Anchor>//api/name/getMessage:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPMessageProvider/getMessages</TokenIdentifier>
+			<Abstract type="html">Returns all messages known to this provider.</Abstract>
+			<DeclaredIn>ILPMessageProvider.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)getMessages</Declaration>
+			
+			<ReturnValue><Abstract type="html">the (possibly empty) list of messages known to this provider</Abstract></ReturnValue>
+			<Anchor>//api/name/getMessages</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPMessageProvider/getMessages:withOrdering:</TokenIdentifier>
+			<Abstract type="html">Returns all messages filtered by the given filter and sorted by the given ordering.</Abstract>
+			<DeclaredIn>ILPMessageProvider.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)getMessages:(id&lt;ILPFilter&gt;)filter withOrdering:(id&lt;ILPOrdering&gt;)ordering</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filter</Name>
+					<Abstract type="html">The filter to be applied to the messages to be returned (if &lt;code&gt;nil&lt;/code&gt;, acts as a filter that accepts all messages; see {@link ILPMessageFilterFactory#getAllFilter()})</Abstract>
+				</Parameter><Parameter>
+					<Name>ordering</Name>
+					<Abstract type="html">The ordering to be applied to the messages to be returned (if &lt;code&gt;nil&lt;/code&gt;, acts as {@link ILPMessageOrderingFactory#getAscendingExpirationOrdering()})</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the (possibly empty) list of messages that satisfy the given filter and ordering</Abstract></ReturnValue>
+			<Anchor>//api/name/getMessages:withOrdering:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPMessageProvider/getOrderingFactory</TokenIdentifier>
+			<Abstract type="html">Returns the {@link ILPMessageOrderingFactory message ordering factory} associated with this provider.</Abstract>
+			<DeclaredIn>ILPMessageProvider.h</DeclaredIn>
+			
+			<Declaration>- (id&lt;ILPMessageOrderingFactory&gt;)getOrderingFactory</Declaration>
+			
+			<ReturnValue><Abstract type="html">the {@link ILPMessageOrderingFactory message ordering factory} associated with this provider</Abstract></ReturnValue>
+			<Anchor>//api/name/getOrderingFactory</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPMessageProvider/removeAllListeners</TokenIdentifier>
+			<Abstract type="html">Removes all listeners from this provider.</Abstract>
+			<DeclaredIn>ILPMessageProvider.h</DeclaredIn>
+			
+			<Declaration>- (void)removeAllListeners</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllListeners</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ILPMessageProvider/removeListener:</TokenIdentifier>
+			<Abstract type="html">Removes the given listener from this provider.</Abstract>
+			<DeclaredIn>ILPMessageProvider.h</DeclaredIn>
+			
+			<Declaration>- (void)removeListener:(id&lt;ILPMessageListener&gt;)listener</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>listener</Name>
+					<Abstract type="html">The listener to remove (must never be &lt;code&gt;nil&lt;/code&gt;)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeListener:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
