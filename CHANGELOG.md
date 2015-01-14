@@ -6,7 +6,8 @@ Version 2.6.2 *(11/17/2014)*
 * Disable motion activity from SDK by default, in the meanwhile, add an API to enable.
 * Stop sending any HTTP request to LP server before registration is completed.
 * Add retry mechanism for registration and Geofence download.
-* Add identifier payload to request JSON.
+* Take IDFV or IDFA as device identifier instead of OpenUUID.
+* Add additional device identifier information such as encode type in request payload.
 
 Version 2.6.1 *(09/26/2014)*
 ----------------------------
