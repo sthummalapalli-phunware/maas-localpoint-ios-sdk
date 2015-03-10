@@ -3,7 +3,7 @@ Localpoint SDK for iOS
 
 Version 2.6.2
 
-Localpoint is a comprehensive location-based and notification customization that allows easy integration with your iOS app. Visit http://www.digby.com/ for more details and to sign up.
+Localpoint is a comprehensive location-based and notification customization that allows easy integration with your iOS app. Visit http://www.phunware.com/ for more details and to sign up.
 
 For more integration detail, please go https://github.com/phunware/maas-localpoint-ios-sdk/wiki.
 
