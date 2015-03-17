@@ -3,9 +3,12 @@ Localpoint SDK for iOS
 
 Version 2.6.2
 
-Localpoint is a comprehensive location-based and notification customization that allows easy integration with your iOS app. Visit http://www.phunware.com/ for more details and to sign up.
+This is Phunware's SDK for Location Marketing, a location- and notification-based system. Visit http://maas.phunware.com/ for more details and to sign up.
 
-For more integration detail, please go https://github.com/phunware/maas-localpoint-ios-sdk/wiki.
+Documentation
+------------
+- how-tos: https://github.com/phunware/maas-localpoint-ios-sdk/wiki
+- API reference: http://phunware.github.io/maas-localpoint-android-sdk/
 
 
 Requirements
