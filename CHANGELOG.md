@@ -1,6 +1,13 @@
 Localpoint iOS SDK - Change Logs
 ==========
 
+Version 2.6.3 *(5/1/2015)*
+----------------------------
+* Change location update methed to use significant location update instead of standard location update.
+* Change the geofence monitoring algorithm to remove the secondary monitoring regions.
+* Change the LP server request payload add add some nodes like `inside`, `entries` and `exit`.
+* Move the geofence breach algorithm from server side to clent side.
+
 Version 2.6.2 *(11/17/2014)*
 ----------------------------
 * Disable motion activity from SDK by default, in the meanwhile, add an API to enable.

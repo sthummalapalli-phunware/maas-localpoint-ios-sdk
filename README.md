@@ -29,7 +29,6 @@ Installation
 ````
 CoreLocation.framework
 CoreGraphics.framework
-CoreMotion.framework
 libsqlite3.lib
 ````
 
