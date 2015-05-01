@@ -1,7 +1,7 @@
 Localpoint SDK for iOS
 ==================
 
-Version 2.6.2
+Version 2.6.3
 
 This is Phunware's iOS SDK for Location Marketing, a location- and notification-based system. Visit http://maas.phunware.com/ for more details and to sign up.
 
