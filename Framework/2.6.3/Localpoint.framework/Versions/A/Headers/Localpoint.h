@@ -31,6 +31,8 @@
 #import <Localpoint/ILPUser.h>
 #import <Localpoint/ILPVersion.h>
 #import <Localpoint/ILPRemoteNotificationListener.h>
+#import <Localpoint/ILPEventHandler.h>
+#import <Localpoint/LPEventHandler.h>
 
 /**
  Location marketing framework container

@@ -59,6 +59,9 @@
 		96E8B99A18AD64D200C417D5 /* LPLogsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E8B99918AD64D200C417D5 /* LPLogsTableViewController.m */; };
 		96E8B99D18AD67BE00C417D5 /* LogsTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E8B99C18AD67BE00C417D5 /* LogsTableCell.m */; };
 		96EFF2C916D6A78800BA7F1F /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EFF2C816D6A78800BA7F1F /* DetailsViewController.m */; };
+		9D1EAE201B0149A000811D27 /* beacons.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D1EAE191B0149A000811D27 /* beacons.json */; };
+		9D1EAE221B0149A000811D27 /* PWBeacon.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1EAE1D1B0149A000811D27 /* PWBeacon.m */; };
+		9D1EAE231B0149A000811D27 /* PWBeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1EAE1F1B0149A000811D27 /* PWBeaconManager.m */; };
 		9D1EEC4A19A2B5CA00A42B92 /* Phunware.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 9D1EEC4919A2B5CA00A42B92 /* Phunware.gpx */; };
 		9D5FCB8419CA3CC900DE9A65 /* iToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5FCB7D19CA3CC900DE9A65 /* iToast.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9D5FCB8519CA3CC900DE9A65 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5FCB7F19CA3CC900DE9A65 /* Toast+UIView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -156,6 +159,11 @@
 		96E8B99C18AD67BE00C417D5 /* LogsTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogsTableCell.m; sourceTree = "<group>"; };
 		96EFF2C716D6A78800BA7F1F /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		96EFF2C816D6A78800BA7F1F /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		9D1EAE191B0149A000811D27 /* beacons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = beacons.json; path = BLE/beacons.json; sourceTree = "<group>"; };
+		9D1EAE1C1B0149A000811D27 /* PWBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWBeacon.h; path = BLE/PWBeacon.h; sourceTree = "<group>"; };
+		9D1EAE1D1B0149A000811D27 /* PWBeacon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWBeacon.m; path = BLE/PWBeacon.m; sourceTree = "<group>"; };
+		9D1EAE1E1B0149A000811D27 /* PWBeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWBeaconManager.h; path = BLE/PWBeaconManager.h; sourceTree = "<group>"; };
+		9D1EAE1F1B0149A000811D27 /* PWBeaconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWBeaconManager.m; path = BLE/PWBeaconManager.m; sourceTree = "<group>"; };
 		9D1EEC4919A2B5CA00A42B92 /* Phunware.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Phunware.gpx; path = ../Phunware.gpx; sourceTree = "<group>"; };
 		9D54AA9419CB474200408143 /* LPConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LPConfiguration.h; path = Localpoint/LPConfiguration.h; sourceTree = "<group>"; };
 		9D54AA9519CB474200408143 /* LPLoggingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LPLoggingManager.h; path = Localpoint/LPLoggingManager.h; sourceTree = "<group>"; };
@@ -222,6 +230,7 @@
 		967ED4F316D3F9A800631571 /* Localpoint */ = {
 			isa = PBXGroup;
 			children = (
+				9D1EAE101B01493300811D27 /* BLE */,
 				9D5FCB8C19CA3F8400DE9A65 /* Listeners */,
 				9D5FCB8B19CA3F2500DE9A65 /* Controllers */,
 				96839C3916F2139800F92D65 /* Utils */,
@@ -346,6 +355,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9D1EAE101B01493300811D27 /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				9D1EAE191B0149A000811D27 /* beacons.json */,
+				9D1EAE1C1B0149A000811D27 /* PWBeacon.h */,
+				9D1EAE1D1B0149A000811D27 /* PWBeacon.m */,
+				9D1EAE1E1B0149A000811D27 /* PWBeaconManager.h */,
+				9D1EAE1F1B0149A000811D27 /* PWBeaconManager.m */,
+			);
+			name = BLE;
+			sourceTree = "<group>";
+		};
 		9D5FCB8B19CA3F2500DE9A65 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -467,6 +488,7 @@
 				96CB674516D3D10D00A610B9 /* Default.png in Resources */,
 				96CB674716D3D10D00A610B9 /* Default@2x.png in Resources */,
 				96CB674916D3D10D00A610B9 /* Default-568h@2x.png in Resources */,
+				9D1EAE201B0149A000811D27 /* beacons.json in Resources */,
 				96CB674C16D3D10D00A610B9 /* MainStoryboard.storyboard in Resources */,
 				96C799A416D67F5B0069020E /* button_orange.png in Resources */,
 				96C799A516D67F5B0069020E /* Icon.png in Resources */,
@@ -533,8 +555,10 @@
 				9D5FCB8719CA3CC900DE9A65 /* ViewController.m in Sources */,
 				962F110018EDC7E90062CAF0 /* LocationFilters.m in Sources */,
 				3FDF5BD617F23AB20038393D /* LPAttributeListener.m in Sources */,
+				9D1EAE221B0149A000811D27 /* PWBeacon.m in Sources */,
 				962F110318EDCC370062CAF0 /* LocationFilterAggregator.m in Sources */,
 				C3623BDE1835368600EDA2E6 /* LPMessageID.m in Sources */,
+				9D1EAE231B0149A000811D27 /* PWBeaconManager.m in Sources */,
 				3FDF5BD717F23AB20038393D /* MyLPConfiguration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

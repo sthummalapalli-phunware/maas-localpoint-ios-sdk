@@ -9,6 +9,7 @@
 #import <Localpoint/Localpoint.h>
 #import "LPLocationListener.h"
 #import "DetailsViewController.h"
+#import "PWBeaconManager.h"
 #import "iToast.h"
 
 @implementation LPLocationListener
@@ -29,6 +30,8 @@
 }
 
 - (void)onEntry:(id<ILPLocation>)location {
+    [[PWBeaconManager sharedManager] startMonitorBeaconsInGeofence:[[location getID] getValue]];
+    
     NSLog(@"Entered location: %@", [location getName]);
     [[[iToast makeText:[NSString stringWithFormat:@"Entered: %@", [location getName]]] setDuration:iToastDurationLong] show];
     
@@ -37,6 +40,8 @@
 }
 
 - (void)onExit:(id<ILPLocation>)location {
+    [[PWBeaconManager sharedManager] stopMonitorBeaconsInGeofence:[[location getID] getValue]];
+    
     NSLog(@"Exited location: %@", [location getName]);
     [[[iToast makeText:[NSString stringWithFormat:@"Exited: %@", [location getName]]] setDuration:iToastDurationLong] show];
     NSString *msg = [NSString stringWithFormat:@"You have exited %@", [location getName]];
