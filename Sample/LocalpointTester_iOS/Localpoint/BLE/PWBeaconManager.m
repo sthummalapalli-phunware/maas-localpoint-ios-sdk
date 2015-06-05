@@ -13,7 +13,7 @@
 
 // Constant Strings
 #warning Replace this string with the proper URL!
-NSString * const kPWLPRemoteBeaconURLString = @"https://www.digbypoc.com/Customers/AE/ae_beacons.json";
+NSString * const kPWLPRemoteBeaconURLString = @"https://dl.dropboxusercontent.com/u/117922424/beacons-2x.json";
 
 NSString * const kPWRegionIdentifierPrefix = @"LP_BLE_";
 NSString * const PWSavedBeaconDataKey = @"PWSavedBeaconDataKey";
