@@ -67,7 +67,7 @@
 		9D5FCB8519CA3CC900DE9A65 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5FCB7F19CA3CC900DE9A65 /* Toast+UIView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9D5FCB8619CA3CC900DE9A65 /* UIAlertView+LPTAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5FCB8119CA3CC900DE9A65 /* UIAlertView+LPTAlertView.m */; };
 		9D5FCB8719CA3CC900DE9A65 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5FCB8319CA3CC900DE9A65 /* ViewController.m */; };
-		9D75DC4D1AF434C80076514E /* Localpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D75DC4C1AF434C80076514E /* Localpoint.framework */; };
+		9D7AA4C11B3074EB003EAC9E /* Localpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7AA4C01B3074EB003EAC9E /* Localpoint.framework */; };
 		9D9008351A02D63F00187F64 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D9008341A02D63F00187F64 /* Crashlytics.framework */; };
 		9DE9F2B219A6A12600924904 /* LPLocalNotificationListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE9F2B119A6A12600924904 /* LPLocalNotificationListener.m */; };
 		C3623BDE1835368600EDA2E6 /* LPMessageID.m in Sources */ = {isa = PBXBuildFile; fileRef = C3623BDD1835368600EDA2E6 /* LPMessageID.m */; };
@@ -175,7 +175,7 @@
 		9D5FCB8119CA3CC900DE9A65 /* UIAlertView+LPTAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+LPTAlertView.m"; path = "Localpoint/UIAlertView+LPTAlertView.m"; sourceTree = "<group>"; };
 		9D5FCB8219CA3CC900DE9A65 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9D5FCB8319CA3CC900DE9A65 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		9D75DC4C1AF434C80076514E /* Localpoint.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Localpoint.framework; path = ../Framework/2.6.3/Localpoint.framework; sourceTree = "<group>"; };
+		9D7AA4C01B3074EB003EAC9E /* Localpoint.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Localpoint.framework; path = ../Framework/2.6.3.1/Localpoint.framework; sourceTree = "<group>"; };
 		9D9008341A02D63F00187F64 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		9DE9F2B019A6A12600924904 /* LPLocalNotificationListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPLocalNotificationListener.h; sourceTree = "<group>"; };
 		9DE9F2B119A6A12600924904 /* LPLocalNotificationListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPLocalNotificationListener.m; sourceTree = "<group>"; };
@@ -192,7 +192,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D75DC4D1AF434C80076514E /* Localpoint.framework in Frameworks */,
+				9D7AA4C11B3074EB003EAC9E /* Localpoint.framework in Frameworks */,
 				9669C35918BD1E3A00428250 /* OpenGLES.framework in Frameworks */,
 				9669C35718BD1E3300428250 /* AudioToolbox.framework in Frameworks */,
 				9669C35518BD1E2B00428250 /* CoreTelephony.framework in Frameworks */,
@@ -306,7 +306,7 @@
 		96CB673116D3D10D00A610B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9D75DC4C1AF434C80076514E /* Localpoint.framework */,
+				9D7AA4C01B3074EB003EAC9E /* Localpoint.framework */,
 				967ED4D016D3F8CD00631571 /* libsqlite3.0.dylib */,
 				9615A31918072EB40086F291 /* libz.dylib */,
 				9D9008341A02D63F00187F64 /* Crashlytics.framework */,
@@ -659,7 +659,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"/Users/xiangwei/workspace/github/maas-localpoint-ios-sdk/Framework/2.6.3",
+					"/Users/xiangwei/workspace/github/maas-localpoint-ios-sdk/Framework/2.6.3.1",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocalpointTester_iOS/LocalpointTester_iOS-Prefix.pch";
@@ -684,7 +684,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"/Users/xiangwei/workspace/github/maas-localpoint-ios-sdk/Framework/2.6.3",
+					"/Users/xiangwei/workspace/github/maas-localpoint-ios-sdk/Framework/2.6.3.1",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocalpointTester_iOS/LocalpointTester_iOS-Prefix.pch";
@@ -739,7 +739,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"/Users/xiangwei/workspace/github/maas-localpoint-ios-sdk/Framework/2.6.3",
+					"/Users/xiangwei/workspace/github/maas-localpoint-ios-sdk/Framework/2.6.3.1",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocalpointTester_iOS/LocalpointTester_iOS-Prefix.pch";

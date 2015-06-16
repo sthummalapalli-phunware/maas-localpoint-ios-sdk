@@ -104,9 +104,10 @@ static NSString *COLON = @" : ";
 }
 
 - (IBAction)onClickGetButton:(id)sender {
-    TmpAttributeManager2 *attrMgr2 = [MyLPConfiguration getTmpAttributeManager2:tvResult];
-    [attrMgr2 addRetrievalListener:self];
-    [attrMgr2 getProfileAttributes];
+    id<ILPAttributeManager> attrMgr = [MyLPConfiguration getAttributeManager:tvResult];
+    [attrMgr getProfileAttributes:^(NSDictionary *attributeDictionary, NSError *error) {
+        tvResult.text = [attributeDictionary description];
+    }];
 }
 
 - (BOOL) textFieldShouldReturn:( UITextField *) textField {
