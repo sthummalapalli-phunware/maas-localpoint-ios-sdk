@@ -4,6 +4,8 @@ Localpoint iOS SDK - Change Logs
 Version 2.6.3.1 *(6/15/2015)*
 ----------------------------
 * Fix the crash when tapping a notification which doesn't have promotion.
+* As device registration response payload won't return inside geofences and messages any more. SDK does the calculation to check if it's necessary to send the geofence entry event after device registration responds.
+* Make the change to apply simple 1:1 notification
 
 Version 2.6.3 *(5/1/2015)*
 ----------------------------
