@@ -1,6 +1,10 @@
 Localpoint iOS SDK - Change Logs
 ==========
 
+Version 2.6.3.1 *(6/15/2015)*
+----------------------------
+* Fix the crash when tapping a notification which doesn't have promotion.
+
 Version 2.6.3 *(5/1/2015)*
 ----------------------------
 * Change location update method to use significant location update instead of standard location update.
