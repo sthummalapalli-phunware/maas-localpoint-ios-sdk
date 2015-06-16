@@ -57,9 +57,10 @@
 
 - (IBAction) onClickGetButton:(id)sender {
     NSLog(@"Clicked Get ID1 button.");
-    TmpAttributeManager2 *attrMgr2 = [MyLPConfiguration getTmpAttributeManager2:resultTextView];
-    [attrMgr2 addRetrievalListener:self];
-    [attrMgr2 getUserAttributes];
+    id<ILPAttributeManager> attrMgr = [MyLPConfiguration getAttributeManager:resultTextView];
+    [attrMgr getUserAttributes:^(NSDictionary *attributes, NSError *error) {
+        resultTextView.text = [attributes description];
+    }];
 }
 
 - (BOOL) textFieldShouldReturn:( UITextField *) textField {
