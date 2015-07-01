@@ -22,6 +22,7 @@ NSTimeInterval const PWFetchBeaconInterval = 60 * 60 * 24; // 1 day
 
 static int maxRequestInterval = 900;
 static NSDate *lastSendTime = nil;
+static NSMutableArray *enteredRegions = nil;
 
 @interface PWBeaconManager () <CLLocationManagerDelegate>
 
@@ -93,15 +94,29 @@ static NSDate *lastSendTime = nil;
                        completion:^(NSError *error) {
                            if (error) {
                                NSLog(@"Failed sending entry event with error: %@", error);
+                           } else {
+                               if (!enteredRegions) {
+                                   enteredRegions = [NSMutableArray new];
+                               }
+                               
+                               if (![enteredRegions containsObject:region.identifier]) {
+                                   [enteredRegions addObject:region.identifier];
+                               }
                            }
             }];
         } else if (beacon.proximity == CLProximityUnknown) {
+            if (!enteredRegions || ![enteredRegions containsObject:region.identifier]) {
+                return;
+            }
+            
             LPEventHandler *eventHandler = [LPEventHandler new];
             [eventHandler process:LPEventTypeExit
                        geofenceId:[self parseBLERegionId:region.identifier]
                        completion:^(NSError *error) {
                            if (error) {
                                NSLog(@"Failed sending entry event with error: %@", error);
+                           } else {
+                               [enteredRegions removeObject:region.identifier];
                            }
                        }];
             [self.locationManager stopRangingBeaconsInRegion:region];
