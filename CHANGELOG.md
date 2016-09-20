@@ -1,5 +1,8 @@
 Localpoint iOS SDK - Change Logs
 ==========
+Version 2.6.3.2 *(9/20/2016)*
+----------------------------
+* Renamed internal log api to avoid collision with apple's internal  api.
 
 Version 2.6.3.1 *(6/15/2015)*
 ----------------------------
